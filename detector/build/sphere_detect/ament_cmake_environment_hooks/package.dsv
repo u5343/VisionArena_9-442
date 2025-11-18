@@ -1,0 +1,4 @@
+source;share/sphere_detect/local_setup.bash
+source;share/sphere_detect/local_setup.dsv
+source;share/sphere_detect/local_setup.sh
+source;share/sphere_detect/local_setup.zsh

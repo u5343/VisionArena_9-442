@@ -1,0 +1,10 @@
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/uninstall.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/sphere_detect_uninstall.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/detect.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/test.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/edit_cache.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/rebuild_cache.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/list_install_components.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/install.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/install/local.dir
+/home/jiangping/VisionArena/detector/build/sphere_detect/CMakeFiles/install/strip.dir
