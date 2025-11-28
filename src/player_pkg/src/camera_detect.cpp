@@ -9,8 +9,8 @@
 #include <referee_pkg/msg/multi_object.hpp>
 #include <referee_pkg/msg/object.hpp>
 #include <sensor_msgs/image_encodings.hpp>
-#include <std_msgs/msg/header.hpp>
 #include "yolo_detect.hpp"
+#include <std_msgs/msg/header.hpp>
 
 #include "sensor_msgs/msg/image.hpp"
 
@@ -29,25 +29,37 @@ public:
             bind(&LocateNode::callback_camera, this, std::placeholders::_1));
         Target_pub = this->create_publisher<referee_pkg::msg::MultiObject>(
             "/vision/target", 10);
-        detector = std::make_shared<YOLODetector>();
         cv::namedWindow("Detection Result", cv::WINDOW_AUTOSIZE);
+        detector_ = std::make_shared<YOLODetector>();
+
         RCLCPP_INFO(this->get_logger(), "TestNode initialized successfully");
     }
     ~LocateNode() { cv::destroyWindow("Detection Result"); }
 
 private:
-    std::shared_ptr<YOLODetector> detector;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr Image_sub;
     rclcpp::Publisher<referee_pkg::msg::MultiObject>::SharedPtr Target_pub;
+    std::shared_ptr<YOLODetector> detector_;
 
     std::vector<std::vector<cv::Point2f>> rectangle_corners_list; // 矩形角点列表
     std::vector<std::vector<cv::Point2f>> sphere_corners_list;    // 球体角点列表
     std::vector<std::vector<cv::Point2f>> midpoint_corners_list;
+    std::vector<std::vector<cv::Point2f>> armor_corners_list;
 
     // 对应的目标类型
     std::vector<std::string> armor_types;     // 装甲板类型
     std::vector<std::string> rectangle_types; // 矩形类型
     std::vector<std::string> sphere_types;    // 球体类型
+    vector<Mat> number_templates;
+    struct TrackedObject
+    {
+        int id;
+        int number;     // 识别到的数字
+        Point2f center; // 中心位置
+    };
+
+    vector<TrackedObject> tracked_objects; // 多个目标列表
+    int next_id = 1;                       // 下一个可用的ID
 
     vector<Point2f> calculateStableSpherePoints(const Point2f &center,
                                                 float radius)
@@ -64,6 +76,34 @@ private:
         return points;
     }
 
+    vector<Point2f> sortCorners(const vector<Point2f> &corners)
+    {
+        if (corners.size() != 4)
+            return corners;
+
+        vector<Point2f> sorted(4);
+
+        // 计算中心点
+        Point2f center(0, 0);
+        for (const auto &p : corners)
+            center += p;
+        center /= 4.0f;
+
+        // 分类四个角点
+        for (const auto &p : corners)
+        {
+            if (p.x < center.x && p.y > center.y)
+                sorted[0] = p; // 左下
+            else if (p.x < center.x && p.y < center.y)
+                sorted[1] = p; // 左上
+            else if (p.x > center.x && p.y < center.y)
+                sorted[2] = p; // 右上
+            else if (p.x > center.x && p.y > center.y)
+                sorted[3] = p; // 右下
+        }
+
+        return sorted;
+    }
     void callback_camera(sensor_msgs::msg::Image::SharedPtr msg)
     {
 
@@ -72,12 +112,13 @@ private:
         rectangle_types.clear();
         sphere_corners_list.clear();
         sphere_types.clear();
-        midpoint_corners_list.clear();
+        armor_corners_list.clear();
 
         // 图像转换
         cv_bridge::CvImagePtr cv_ptr;
         cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
         Mat image = cv_ptr->image;
+        // Mat image2 =cv_ptr->image;
         Mat hsv, mask;
         cvtColor(image, hsv, cv::COLOR_BGR2HSV);
         inRange(hsv, Scalar(0, 0, 0), Scalar(180, 50, 50), mask);
@@ -98,26 +139,241 @@ private:
 
                 if (approx.size() == 4 || approx.size() == 5 || approx.size() == 6)
                 {
+                    // 绘制凸包轮廓
+                    vector<vector<Point>> hull_contours = {approx};
+                    // drawContours(image, hull_contours, 0, Scalar(0, 255, 255), 3);
+
                     // 使用最小外接矩形找4个有序角点
                     RotatedRect rect = minAreaRect(approx); // 最小外接矩形
 
                     Point2f rect_points[4];
                     rect.points(rect_points); // 直接得到4个有序角点
 
-                    // 绘制矩形角点（用绿色标记）
+                    // 绘制矩形角点（用绿色标记，区别于蓝色原始角点）
+                    // for (int j = 0; j < 4; j++)
+                    // {
+                    //     circle(image, rect_points[j], 8, Scalar(0, 255, 0), 1);
+                    //     // line(image, rect_points[j], rect_points[(j + 1) % 4], Scalar(0, 255, 0), 2);
+                    // }
+
+                    // 修改为多目标跟踪逻辑
+                    Point2f current_center = rect.center;
+                    int current_id = -1;
+                    bool is_existing_target = false;
+
+                    // 查找最近的已有目标
+                    float min_distance = 50.0f;
+                    int best_match_index = -1;
+
+                    for (int i = 0; i < tracked_objects.size(); i++)
+                    {
+                        float distance = norm(current_center - tracked_objects[i].center);
+                        if (distance < min_distance)
+                        {
+                            min_distance = distance;
+                            best_match_index = i;
+                            is_existing_target = true;
+                        }
+                    }
+
+                    if (is_existing_target)
+                    {
+                        // 更新现有目标
+                        current_id = tracked_objects[best_match_index].id;
+                        tracked_objects[best_match_index].center = current_center;
+                    }
+                    else
+                    {
+                        // 创建新目标
+                        current_id = next_id++;
+                        tracked_objects.push_back({current_id, -1, current_center});
+                    }
+
+                    vector<Point2f> perspective_points;
                     for (int j = 0; j < 4; j++)
                     {
-                        circle(image, rect_points[j], 8, Scalar(0, 255, 0), 1);
+                        perspective_points.push_back(rect_points[j]);
                     }
-                    std::string armor = detector->getLatestArmor();
-                    RCLCPP_INFO(this->get_logger(), "detected:%s", armor.c_str());
-                    // 简化：直接添加装甲板类型
-                    armor_types.push_back(armor);
+
+                    perspective_points = sortCorners(perspective_points);
+
+                    // 调用透视函数
+                    // Mat corrected_armor = perspectiveCorrection(image, perspective_points);
+
+                    // 多目标数字识别
+                    if (!image.empty())
+                    {
+                        int current_number = detector_->detect(image);
+                        RCLCPP_INFO(this->get_logger(), "YOLO:%d", current_number);
+                        if (current_number != -1)
+                        {
+                            // 更新对应目标的数字
+                            for (auto &obj : tracked_objects)
+                            {
+                                if (obj.id == current_id)
+                                {
+                                    obj.number = current_number;
+
+                                    // 在这里添加装甲板类型存储
+                                    std::string type_str = "armor_" + std::to_string(current_number);
+
+                                    std::vector<cv::Point2f> armor_corners;
+                                    for (int j = 0; j < 4; j++)
+                                    {
+                                        armor_corners.push_back(perspective_points[j]);
+                                    }
+
+                                    armor_types.push_back(type_str);
+                                    break;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // 识别失败，也存储默认装甲板类型
+                            std::vector<cv::Point2f> armor_corners;
+                            for (int j = 0; j < 4; j++)
+                            {
+                                armor_corners.push_back(perspective_points[j]);
+                            }
+
+                            armor_types.push_back("armor");
+                        }
+                    }
+                    else
+                    {
+                        // 如果没有透视变换图像，也存储默认装甲板类型 ↓
+                        std::vector<cv::Point2f> armor_corners;
+                        for (int j = 0; j < 4; j++)
+                        {
+                            armor_corners.push_back(perspective_points[j]);
+                        }
+
+                        armor_types.push_back("armor");
+                    }
+
+                    // 显示目标信息（在矩形右上角）
+                    for (const auto &obj : tracked_objects)
+                    {
+                        if (obj.id == current_id)
+                        {
+                            string display_text = "ID:" + to_string(obj.id);
+                            if (obj.number != -1)
+                            {
+                                display_text += " Num:" + to_string(obj.number);
+                            }
+                            putText(image, display_text,
+                                    Point(rect.center.x + 20, rect.center.y - 30),
+                                    FONT_HERSHEY_SIMPLEX, 0.6, Scalar(0, 255, 255), 1);
+                            break;
+                        }
+                    }
+                    //
+
+                    // // 显示透视变换结果
+                    // if (!corrected_armor.empty())
+                    // {
+                    //     imshow("Corrected Armor", corrected_armor);
+                    // }
+
+                    if (approx.size() == 4 || approx.size() == 5 || approx.size() == 6)
+                    {
+
+                        //  在装甲板区域内直接检测红条
+                        cv::Rect armor_roi = rect.boundingRect();
+                        armor_roi &= cv::Rect(0, 0, image.cols, image.rows); // 确保在图像范围内
+
+                        if (armor_roi.width > 0 && armor_roi.height > 0)
+                        {
+                            cv::Mat armor_region = image(armor_roi);
+
+                            // 在装甲板区域内检测红色
+                            cv::Mat hsv_armor;
+                            cv::cvtColor(armor_region, hsv_armor, cv::COLOR_BGR2HSV);
+
+                            cv::Mat mask1_armor, mask2_armor, mask_red_armor;
+                            cv::inRange(hsv_armor, cv::Scalar(0, 120, 70), cv::Scalar(10, 255, 255), mask1_armor);
+                            cv::inRange(hsv_armor, cv::Scalar(170, 120, 70), cv::Scalar(180, 255, 255), mask2_armor);
+                            mask_red_armor = mask1_armor | mask2_armor;
+
+                            vector<vector<Point>> contours_red_armor;
+                            findContours(mask_red_armor, contours_red_armor, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+
+                            std::vector<cv::Point2f> armor_red_points;
+
+                            for (size_t k = 0; k < contours_red_armor.size(); k++)
+                            {
+                                double area_red = cv::contourArea(contours_red_armor[k]);
+                                if ((area_red > 20) && (area_red < 500))
+                                {
+                                    // 计算最小外接矩形
+                                    RotatedRect red_rect = minAreaRect(contours_red_armor[k]);
+
+                                    // 将坐标转换回原图像坐标系
+                                    Point2f red_center = red_rect.center;
+                                    red_center.x += armor_roi.x;
+                                    red_center.y += armor_roi.y;
+
+                                    // 获取矩形的4个角点
+                                    Point2f red_points[4];
+                                    red_rect.points(red_points);
+
+                                    // 将角点转换为vector并使用sortCorners排序
+                                    std::vector<cv::Point2f> red_corners_vector;
+                                    for (int j = 0; j < 4; j++)
+                                    {
+                                        red_points[j].x += armor_roi.x; // 坐标转换
+                                        red_points[j].y += armor_roi.y;
+                                        red_corners_vector.push_back(red_points[j]);
+                                    }
+                                    std::vector<cv::Point2f> sorted_red_corners = sortCorners(red_corners_vector);
+
+                                    // 计算上下中点
+                                    Point2f top_midpoint(
+                                        (sorted_red_corners[1].x + sorted_red_corners[2].x) / 2,
+                                        (sorted_red_corners[1].y + sorted_red_corners[2].y) / 2);
+                                    Point2f bottom_midpoint(
+                                        (sorted_red_corners[0].x + sorted_red_corners[3].x) / 2,
+                                        (sorted_red_corners[0].y + sorted_red_corners[3].y) / 2);
+
+                                    // 存储到装甲板的红条点列表
+                                    armor_red_points.push_back(top_midpoint);
+                                    armor_red_points.push_back(bottom_midpoint);
+
+                                    // 在图像上标记（使用不同颜色区分）
+                                    circle(image, top_midpoint, 4, Scalar(0, 255, 255), -1);    // 黄色：上中点
+                                    circle(image, bottom_midpoint, 4, Scalar(255, 255, 0), -1); // 青色：下中点
+                                    circle(image, red_center, 3, Scalar(0, 0, 255), -1);        // 红色：红条中心
+                                }
+                            }
+
+                            // 存储装甲板的红条中点
+                            if (armor_red_points.size() >= 4)
+                            {
+                                // 有足够多的红条点，取前4个
+                                armor_red_points.resize(4);
+                            }
+                            else
+                            {
+                                // 红条点不足，用零填充
+                                while (armor_red_points.size() < 4)
+                                {
+                                    armor_red_points.push_back(Point2f(0, 0));
+                                }
+                            }
+
+                            // 存储到装甲板角点列表
+                            armor_corners_list.push_back(armor_red_points);
+
+                            RCLCPP_DEBUG(this->get_logger(), "装甲板%d找到%d个红条中点", current_id, (int)armor_red_points.size());
+                        }
+                    }
                 }
             }
         }
 
         Mat image_rect = cv_ptr->image;
+        // Mat image2 =cv_ptr->image;
 
         Mat hsv_rect, mask_rect;
         cvtColor(image_rect, hsv_rect, cv::COLOR_BGR2HSV);
@@ -134,6 +390,9 @@ private:
                 approxPolyDP(contours_rect[i], conpoly_rect[i], 0.02 * peri_rect, true);
                 if (conpoly_rect[i].size() == 4)
                 {
+
+                    conpoly_rect[i] = sortCorners(conpoly_rect[i]);
+
                     vector<cv::Point2f> rect_corners;
                     for (int j = 0; j < 4; j++)
                     {
@@ -142,12 +401,12 @@ private:
                     rectangle_corners_list.push_back(rect_corners);
                     rectangle_types.push_back("rectangle");
 
-                    vector<string> corner_names = {"1", "2", "3", "4"};
+                    vector<string> corner_names = {"1", "2", "3", "4"}; // 左下、左上、右上、右下
                     vector<Scalar> colors = {
-                        Scalar(0, 0, 255),  // 红色
-                        Scalar(0, 255, 0),  // 绿色
-                        Scalar(255, 0, 0),  // 蓝色
-                        Scalar(0, 255, 255) // 黄色
+                        Scalar(0, 0, 255),  // 红色 - 左下
+                        Scalar(0, 255, 0),  // 绿色 - 左上
+                        Scalar(255, 0, 0),  // 蓝色 - 右上
+                        Scalar(0, 255, 255) // 黄色 - 右下
                     };
 
                     for (int j = 0; j < 4; j++)
@@ -251,77 +510,6 @@ private:
             }
         }
 
-        Mat image_red = cv_ptr->image;
-        cv::Mat hsv_red;
-        cv::cvtColor(image_red, hsv_red, cv::COLOR_BGR2HSV);
-
-        // 红色检测 - 使用稳定的范围
-        cv::Mat mask1_red, mask2_red, mask_red;
-        cv::inRange(hsv_red, cv::Scalar(0, 120, 70), cv::Scalar(10, 255, 255), mask1_red);
-        cv::inRange(hsv_red, cv::Scalar(170, 120, 70), cv::Scalar(180, 255, 255), mask2_red);
-        mask_red = mask1_red | mask2_red;
-
-        vector<vector<Point>> contours_red;
-        findContours(mask_red, contours_red, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
-
-        for (size_t i = 0; i < contours_red.size(); i++)
-        {
-            double area_red = cv::contourArea(contours_red[i]);
-            if ((area_red > 20) && (area_red < 500))
-            {
-                // 计算最小外接矩形
-                RotatedRect min_rect = minAreaRect(contours_red[i]);
-
-                // 获取矩形的4个角点
-                Point2f rect_points[4];
-                min_rect.points(rect_points);
-
-                // 简化：直接计算中点
-                // 计算所有点的平均位置来找上下边
-                Point2f center = min_rect.center;
-
-                // 找到上边和下边的点
-                vector<Point2f> top_points, bottom_points;
-                for (int j = 0; j < 4; j++)
-                {
-                    if (rect_points[j].y < center.y)
-                        top_points.push_back(rect_points[j]);
-                    else
-                        bottom_points.push_back(rect_points[j]);
-                }
-
-                // 计算上边和下边的中点
-                Point2f top_midpoint(0, 0), bottom_midpoint(0, 0);
-
-                if (top_points.size() >= 2)
-                {
-                    top_midpoint = Point2f(
-                        (top_points[0].x + top_points[1].x) / 2,
-                        (top_points[0].y + top_points[1].y) / 2);
-                }
-
-                if (bottom_points.size() >= 2)
-                {
-                    bottom_midpoint = Point2f(
-                        (bottom_points[0].x + bottom_points[1].x) / 2,
-                        (bottom_points[0].y + bottom_points[1].y) / 2);
-                }
-
-                // 存储中点坐标（模拟4个点）
-                std::vector<cv::Point2f> midpoint_corners;
-                midpoint_corners.push_back(top_midpoint);    // 点1：上中点
-                midpoint_corners.push_back(bottom_midpoint); // 点2：下中点
-                midpoint_corners.push_back(top_midpoint);    // 点3：（占位）
-                midpoint_corners.push_back(bottom_midpoint); // 点4：（占位）
-
-                midpoint_corners_list.push_back(midpoint_corners);
-
-                // 用圆圈标记这两个中点
-                circle(image, top_midpoint, 4, Scalar(0, 255, 0), -1);    // 绿色：上中点
-                circle(image, bottom_midpoint, 4, Scalar(0, 255, 0), -1); // 绿色：下中点
-            }
-        }
-
         //  发布消息部分
         referee_pkg::msg::MultiObject msg_object;
         msg_object.header = msg->header;
@@ -336,83 +524,80 @@ private:
             referee_pkg::msg::Object obj;
             obj.target_type = armor_types[i];
 
-            // 为每个装甲板找到最近的两个红条中点作为角点
-            if (i < midpoint_corners_list.size())
+            // 使用红条中点作为角点
+            for (int j = 0; j < 4; j++)
             {
-                // 直接使用对应的红条中点坐标
-                for (int j = 0; j < 4; j++)
+                geometry_msgs::msg::Point corner;
+                if (i < armor_corners_list.size() && j < armor_corners_list[i].size())
                 {
-                    geometry_msgs::msg::Point corner;
-                    corner.x = midpoint_corners_list[i][j].x;
-                    corner.y = midpoint_corners_list[i][j].y;
-                    corner.z = 0.0;
-                    obj.corners.push_back(corner);
+                    corner.x = armor_corners_list[i][j].x;
+                    corner.y = armor_corners_list[i][j].y;
                 }
-            }
-            else
-            {
-
-                for (int j = 0; j < 4; j++)
+                else
                 {
-                    geometry_msgs::msg::Point corner;
-                    corner.x = 0.0;
+                    corner.x = 0.0; // 安全保护
                     corner.y = 0.0;
-                    corner.z = 0.0;
-                    obj.corners.push_back(corner);
                 }
+                corner.z = 0.0;
+                obj.corners.push_back(corner);
             }
 
-            // 2. 发布矩形（类型+4个角点）
-            for (int i = 0; i < rectangle_corners_list.size(); i++)
-            {
-                referee_pkg::msg::Object obj;
-                obj.target_type = "rectangle";
+            msg_object.objects.push_back(obj);
 
-                for (int j = 0; j < 4; j++)
-                {
-                    geometry_msgs::msg::Point corner;
-                    corner.x = rectangle_corners_list[i][j].x;
-                    corner.y = rectangle_corners_list[i][j].y;
-                    corner.z = 0.0;
-                    obj.corners.push_back(corner);
-                }
-
-                msg_object.objects.push_back(obj);
-            }
-
-            // 3. 发布球体（类型+4个角点）
-            for (int i = 0; i < sphere_corners_list.size(); i++)
-            {
-                referee_pkg::msg::Object obj;
-                obj.target_type = "sphere";
-
-                for (int j = 0; j < 4; j++)
-                {
-                    geometry_msgs::msg::Point corner;
-                    corner.x = sphere_corners_list[i][j].x;
-                    corner.y = sphere_corners_list[i][j].y;
-                    corner.z = 0.0;
-                    obj.corners.push_back(corner);
-                }
-
-                msg_object.objects.push_back(obj);
-            }
-
-                      Target_pub->publish(msg_object);
-
-            RCLCPP_INFO(this->get_logger(), "发布完成: %d个装甲板(仅类型) %d个矩形 %d个球体, 总计%d个目标",
-                        (int)armor_types.size(), (int)rectangle_corners_list.size(), (int)sphere_corners_list.size(), total_targets);
-            cv::imshow("Detection Result", image);
-            cv::waitKey(1);
+            RCLCPP_DEBUG(this->get_logger(), "装甲板%d: 类型=%s, 角点数=%d",
+                         i, armor_types[i].c_str(), (int)armor_corners_list[i].size());
         }
-    };
 
-    int main(int argc, char **argv)
-    {
-        rclcpp::init(argc, argv);
-        auto node = std::make_shared<LocateNode>("LocateNode");
-        RCLCPP_INFO(node->get_logger(), "Starting TestNode");
-        rclcpp::spin(node);
-        rclcpp::shutdown();
-        return 0;
+        // 2. 发布矩形（类型+4个角点）
+        for (int i = 0; i < rectangle_corners_list.size(); i++)
+        {
+            referee_pkg::msg::Object obj;
+            obj.target_type = "rectangle";
+
+            for (int j = 0; j < 4; j++)
+            {
+                geometry_msgs::msg::Point corner;
+                corner.x = rectangle_corners_list[i][j].x;
+                corner.y = rectangle_corners_list[i][j].y;
+                corner.z = 0.0;
+                obj.corners.push_back(corner);
+            }
+
+            msg_object.objects.push_back(obj);
+        }
+
+        // 3. 发布球体（类型+4个角点）
+        for (int i = 0; i < sphere_corners_list.size(); i++)
+        {
+            referee_pkg::msg::Object obj;
+            obj.target_type = "sphere";
+
+            for (int j = 0; j < 4; j++)
+            {
+                geometry_msgs::msg::Point corner;
+                corner.x = sphere_corners_list[i][j].x;
+                corner.y = sphere_corners_list[i][j].y;
+                corner.z = 0.0;
+                obj.corners.push_back(corner);
+            }
+
+            msg_object.objects.push_back(obj);
+        }
+
+        Target_pub->publish(msg_object);
+
+        RCLCPP_INFO(this->get_logger(), "发布完成: %d个装甲板(仅类型) %d个矩形 %d个球体, 总计%d个目标",
+                    (int)armor_types.size(), (int)rectangle_corners_list.size(), (int)sphere_corners_list.size(), total_targets);
+        cv::imshow("Detection Result", image);
+        cv::waitKey(1);
     }
+};
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<LocateNode>("LocateNode");
+    RCLCPP_INFO(node->get_logger(), "Starting TestNode");
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
+}

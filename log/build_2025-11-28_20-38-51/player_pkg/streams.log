@@ -1,0 +1,28 @@
+[0.020s] Invoking command in '/home/jiangping/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/build/player_pkg -- -j8 -l8
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target yolo_detector_node[0m
+[0.087s] [ 50%] [32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o[0m
+[8.451s] [100%] [32m[1mLinking CXX executable yolo_detector_node[0m
+[8.844s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405
+[8.850s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405
+[9.486s] [100%] Built target yolo_detector_node
+[9.498s] Invoked command in '/home/jiangping/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/build/player_pkg -- -j8 -l8
+[9.513s] Invoking command in '/home/jiangping/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jiangping/Vision_Arena_2025/build/player_pkg
+[9.531s] -- Install configuration: ""
+[9.536s] -- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node
+[9.547s] -- Set runtime path of "/home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node" to "/home/jiangping/onnxruntime-linux-x64-1.23.2/lib:/opt/ros/humble/lib:/home/jiangping/Vision_Arena_2025/install/pose_msg/lib:/home/jiangping/Vision_Arena_2025/install/referee_pkg/lib:/usr/local/lib"
+[9.547s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+[9.547s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+[9.547s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.sh
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.dsv
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.bash
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.sh
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.zsh
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.dsv
+[9.548s] -- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.dsv
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+[9.548s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.xml
+[9.552s] Invoked command in '/home/jiangping/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jiangping/Vision_Arena_2025/build/player_pkg

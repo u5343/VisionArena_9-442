@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.000623] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.001827] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.010747] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.011997] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.012077] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jiangping/Vision_Arena_2025/build/player_pkg', '--', '-j8', '-l8'], 'cwd': '/home/jiangping/Vision_Arena_2025/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jiangping'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1357'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=fd5cbfecd17847bf788458f769297773'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jiangping/anaconda3/condabin:/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1357,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1357'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2824a0aa_eac8_4f19_90c7_cf1268af0d09'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JR7VG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/jiangping/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/jiangping/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=fd5cbfecd17847bf788458f769297773'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.068866] (player_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolo_detector_node\x1b[0m\n'}
+[0.092395] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o\x1b[0m\n'}
+[0.100174] (-) TimerEvent: {}
+[0.200652] (-) TimerEvent: {}
+[0.301233] (-) TimerEvent: {}
+[0.401944] (-) TimerEvent: {}
+[0.502549] (-) TimerEvent: {}
+[0.603171] (-) TimerEvent: {}
+[0.703736] (-) TimerEvent: {}
+[0.804327] (-) TimerEvent: {}
+[0.904722] (-) TimerEvent: {}
+[1.005296] (-) TimerEvent: {}
+[1.106078] (-) TimerEvent: {}
+[1.206739] (-) TimerEvent: {}
+[1.307364] (-) TimerEvent: {}
+[1.408918] (-) TimerEvent: {}
+[1.509784] (-) TimerEvent: {}
+[1.610242] (-) TimerEvent: {}
+[1.710689] (-) TimerEvent: {}
+[1.811645] (-) TimerEvent: {}
+[1.912393] (-) TimerEvent: {}
+[2.013391] (-) TimerEvent: {}
+[2.114450] (-) TimerEvent: {}
+[2.214949] (-) TimerEvent: {}
+[2.315423] (-) TimerEvent: {}
+[2.416257] (-) TimerEvent: {}
+[2.517306] (-) TimerEvent: {}
+[2.617838] (-) TimerEvent: {}
+[2.718422] (-) TimerEvent: {}
+[2.819010] (-) TimerEvent: {}
+[2.919715] (-) TimerEvent: {}
+[3.020229] (-) TimerEvent: {}
+[3.121008] (-) TimerEvent: {}
+[3.221661] (-) TimerEvent: {}
+[3.322386] (-) TimerEvent: {}
+[3.413120] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:420:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[3.413367] (player_pkg) StderrLine: {'line': b'  420 |     }\n'}
+[3.413570] (player_pkg) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.413619] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:22:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.413654] (player_pkg) StderrLine: {'line': b'   22 | \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[3.413684] (player_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.422895] (-) TimerEvent: {}
+[3.440438] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LocateNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.440665] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:87:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdetector_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdetector\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.440723] (player_pkg) StderrLine: {'line': b'   87 |         std::string armor = \x1b[01;31m\x1b[Kdetector_\x1b[m\x1b[K->detect(image);\n'}
+[3.440770] (player_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.440798] (player_pkg) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Kdetector\x1b[m\x1b[K\n'}
+[3.441717] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:114:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class YOLODetector\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass YOLODetector\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[KgetLatestArmor\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.442013] (player_pkg) StderrLine: {'line': b'  114 |                     std::string armor = detector->\x1b[01;31m\x1b[KgetLatestArmor\x1b[m\x1b[K();\n'}
+[3.442054] (player_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.446204] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:336:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.446434] (player_pkg) StderrLine: {'line': b'  336 |         for (int i = 0; \x1b[01;35m\x1b[Ki < armor_types.size()\x1b[m\x1b[K; i++)\n'}
+[3.446532] (player_pkg) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.446962] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:342:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<cv::Point_<float> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.447091] (player_pkg) StderrLine: {'line': b'  342 |             if (\x1b[01;35m\x1b[Ki < midpoint_corners_list.size()\x1b[m\x1b[K)\n'}
+[3.447130] (player_pkg) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.447162] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:368:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<cv::Point_<float> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.447193] (player_pkg) StderrLine: {'line': b'  368 |             for (int i = 0; \x1b[01;35m\x1b[Ki < rectangle_corners_list.size()\x1b[m\x1b[K; i++)\n'}
+[3.447221] (player_pkg) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.447953] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:386:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<cv::Point_<float> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.448063] (player_pkg) StderrLine: {'line': b'  386 |             for (int i = 0; \x1b[01;35m\x1b[Ki < sphere_corners_list.size()\x1b[m\x1b[K; i++)\n'}
+[3.448101] (player_pkg) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.448134] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:197:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kvalid_spheres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.448168] (player_pkg) StderrLine: {'line': b'  197 |         int \x1b[01;35m\x1b[Kvalid_spheres\x1b[m\x1b[K = 0;\n'}
+[3.448194] (player_pkg) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.452483] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.452581] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:420:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[3.452621] (player_pkg) StderrLine: {'line': b'  420 |     }\n'}
+[3.452652] (player_pkg) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.523073] (-) TimerEvent: {}
+[3.623586] (-) TimerEvent: {}
+[3.724099] (-) TimerEvent: {}
+[3.824833] (-) TimerEvent: {}
+[3.925446] (-) TimerEvent: {}
+[4.026368] (-) TimerEvent: {}
+[4.127156] (-) TimerEvent: {}
+[4.227737] (-) TimerEvent: {}
+[4.328182] (-) TimerEvent: {}
+[4.428925] (-) TimerEvent: {}
+[4.529358] (-) TimerEvent: {}
+[4.630512] (-) TimerEvent: {}
+[4.731544] (-) TimerEvent: {}
+[4.832197] (-) TimerEvent: {}
+[4.933074] (-) TimerEvent: {}
+[5.033927] (-) TimerEvent: {}
+[5.134709] (-) TimerEvent: {}
+[5.235329] (-) TimerEvent: {}
+[5.335796] (-) TimerEvent: {}
+[5.436502] (-) TimerEvent: {}
+[5.537280] (-) TimerEvent: {}
+[5.638158] (-) TimerEvent: {}
+[5.738957] (-) TimerEvent: {}
+[5.839507] (-) TimerEvent: {}
+[5.940287] (-) TimerEvent: {}
+[6.041017] (-) TimerEvent: {}
+[6.141976] (-) TimerEvent: {}
+[6.242486] (-) TimerEvent: {}
+[6.343045] (-) TimerEvent: {}
+[6.443814] (-) TimerEvent: {}
+[6.544414] (-) TimerEvent: {}
+[6.645244] (-) TimerEvent: {}
+[6.680273] (player_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/yolo_detector_node.dir/build.make:76: CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o] Error 1\n'}
+[6.680748] (player_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/yolo_detector_node.dir/all] Error 2\n'}
+[6.680906] (player_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.684189] (player_pkg) CommandEnded: {'returncode': 2}
+[6.695950] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 2}
+[6.706578] (-) EventReactorShutdown: {}

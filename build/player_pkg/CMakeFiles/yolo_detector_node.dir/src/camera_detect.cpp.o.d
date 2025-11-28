@@ -780,13 +780,13 @@ CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o: \
  /home/jiangping/Vision_Arena_2025/install/referee_pkg/include/referee_pkg/referee_pkg/msg/object.hpp \
  /home/jiangping/Vision_Arena_2025/install/referee_pkg/include/referee_pkg/referee_pkg/msg/detail/object__builder.hpp \
  /home/jiangping/Vision_Arena_2025/install/referee_pkg/include/referee_pkg/referee_pkg/msg/detail/object__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp \
  /home/jiangping/onnxruntime-linux-x64-1.23.2/include/onnxruntime_cxx_api.h \
  /home/jiangping/onnxruntime-linux-x64-1.23.2/include/onnxruntime_c_api.h \
  /home/jiangping/onnxruntime-linux-x64-1.23.2/include/onnxruntime_ep_c_api.h \
  /home/jiangping/onnxruntime-linux-x64-1.23.2/include/onnxruntime_float16.h \
- /home/jiangping/onnxruntime-linux-x64-1.23.2/include/onnxruntime_cxx_inline.h
+ /home/jiangping/onnxruntime-linux-x64-1.23.2/include/onnxruntime_cxx_inline.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

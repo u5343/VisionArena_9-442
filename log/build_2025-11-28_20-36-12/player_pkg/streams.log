@@ -1,0 +1,30 @@
+[0.013s] Invoking command in '/home/jiangping/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/build/player_pkg -- -j8 -l8
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target yolo_detector_node[0m
+[0.079s] [ 50%] [32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o[0m
+[2.995s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:[m[K In member function ‘[01m[Kvoid LocateNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.995s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:87:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetector[m[K’?
+[2.995s]    87 |         std::string armor = [01;31m[Kdetector_[m[K->detect(image);
+[2.995s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.995s]       |                             [32m[Kdetector[m[K
+[2.996s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:114:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class YOLODetector[m[K’ {aka ‘[01m[Kclass YOLODetector[m[K’} has no member named ‘[01m[KgetLatestArmor[m[K’
+[2.996s]   114 |                     std::string armor = detector->[01;31m[KgetLatestArmor[m[K();
+[2.996s]       |                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.999s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:336:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.999s]   336 |         for (int i = 0; [01;35m[Ki < armor_types.size()[m[K; i++)
+[2.999s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[3.001s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:342:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.001s]   342 |             if ([01;35m[Ki < midpoint_corners_list.size()[m[K)
+[3.001s]       |                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.001s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:368:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.001s]   368 |             for (int i = 0; [01;35m[Ki < rectangle_corners_list.size()[m[K; i++)
+[3.001s]       |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.001s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:386:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.001s]   386 |             for (int i = 0; [01;35m[Ki < sphere_corners_list.size()[m[K; i++)
+[3.001s]       |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.001s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:197:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_spheres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.001s]   197 |         int [01;35m[Kvalid_spheres[m[K = 0;
+[3.001s]       |             [01;35m[K^~~~~~~~~~~~~[m[K
+[5.768s] gmake[2]: *** [CMakeFiles/yolo_detector_node.dir/build.make:76: CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o] Error 1
+[5.768s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/yolo_detector_node.dir/all] Error 2
+[5.768s] gmake: *** [Makefile:146: all] Error 2
+[5.772s] Invoked command in '/home/jiangping/Vision_Arena_2025/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/build/player_pkg -- -j8 -l8
