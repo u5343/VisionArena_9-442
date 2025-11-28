@@ -1,0 +1,177 @@
+[35m[1mConsolidate compiler generated dependencies of target yolo_detector_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o[0m
+In file included from [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:13[m[K:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:4:1:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ does not name a type
+    4 | [01;31m[KYOLODetector[m[K::YOLODetector()
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:10:6:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ has not been declared
+   10 | void [01;31m[KYOLODetector[m[K::initONNX()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In function ‘[01m[Kvoid initONNX()[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:12:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kenv[m[K’ was not declared in this scope
+   12 |   [01;31m[Kenv[m[K = std::make_unique<Ort::Env>(ORT_LOGGING_LEVEL_WARNING, "YOLOv11");
+      |   [01;31m[K^~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:19:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksession[m[K’ was not declared in this scope
+   19 |   [01;31m[Ksession[m[K = std::make_unique<Ort::Session>(*env, model_path, session_options);
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:22:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_name[m[K’ was not declared in this scope; did you mean ‘[01m[Kptsname[m[K’?
+   22 |   [01;31m[Kinput_name[m[K = session->GetInputNameAllocated(0, allocator).get();
+      |   [01;31m[K^~~~~~~~~~[m[K
+      |   [32m[Kptsname[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:23:3:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_name[m[K’ was not declared in this scope
+   23 |   [01;31m[Koutput_name[m[K = session->GetOutputNameAllocated(0, allocator).get();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_height[m[K’ was not declared in this scope
+   28 |   [01;31m[Kinput_height[m[K = input_shape[2];
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_width[m[K’ was not declared in this scope
+   29 |   [01;31m[Kinput_width[m[K = input_shape[3];
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K At global scope:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ has not been declared
+   32 | cv::Mat [01;31m[KYOLODetector[m[K::preprocess(const cv::Mat &image)
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In function ‘[01m[Kcv::Mat preprocess(const cv::Mat&)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:35:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_width[m[K’ was not declared in this scope
+   35 |   cv::resize(image, resized, cv::Size([01;31m[Kinput_width[m[K, input_height));
+      |                                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:35:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_height[m[K’ was not declared in this scope
+   35 |   cv::resize(image, resized, cv::Size(input_width, [01;31m[Kinput_height[m[K));
+      |                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K At global scope:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:40:13:[m[K [01;31m[Kerror: [m[K‘[01m[KDetection[m[K’ was not declared in this scope
+   40 | std::vector<[01;31m[KDetection[m[K> YOLODetector::inference(const cv::Mat &blob, cv::Size img_size)
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:40:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 | std::vector<Detection[01;31m[K>[m[K YOLODetector::inference(const cv::Mat &blob, cv::Size img_size)
+      |                      [01;31m[K^[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:40:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:40:24:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ has not been declared
+   40 | std::vector<Detection> [01;31m[KYOLODetector[m[K::inference(const cv::Mat &blob, cv::Size img_size)
+      |                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In function ‘[01m[Kint inference(const cv::Mat&, cv::Size)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:42:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_height[m[K’ was not declared in this scope
+   42 |   const int64_t input_tensor_shape[4] = {1, 3, [01;31m[Kinput_height[m[K, input_width};
+      |                                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:42:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_width[m[K’ was not declared in this scope
+   42 |  const int64_t input_tensor_shape[4] = {1, 3, input_height, [01;31m[Kinput_width[m[K};
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:59:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ksession[m[K’ was not declared in this scope
+   59 |   auto output_tensors = [01;31m[Ksession[m[K->Run(
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:61:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_name[m[K’ was not declared in this scope; did you mean ‘[01m[Kptsname[m[K’?
+   61 |       &[01;31m[Kinput_name[m[K, &input_tensor, 1,
+      |        [01;31m[K^~~~~~~~~~[m[K
+      |        [32m[Kptsname[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:62:8:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_name[m[K’ was not declared in this scope
+   62 |       &[01;31m[Koutput_name[m[K, 1);
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:64:63:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+   64 |   float *output = output_tensors.front().GetTensorMutableData<[01;31m[Kfloat[m[K>();
+      |                                                               [01;31m[K^~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:66:15:[m[K [01;31m[Kerror: [m[K‘[01m[KDetection[m[K’ was not declared in this scope
+   66 |   std::vector<[01;31m[KDetection[m[K> detections;
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:66:24:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |   std::vector<Detection[01;31m[K>[m[K detections;
+      |                        [01;31m[K^[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:66:24:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:80:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdet[m[K’
+   80 |     Detection[01;31m[K [m[K[32m[Kdet[m[K;
+      |              [01;31m[K^[m[K[32m[K~~~[m[K
+      |              [32m[K;[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdet[m[K’ was not declared in this scope
+   81 |     [01;31m[Kdet[m[K.box = cv::Rect(x - w / 2, y - h / 2, w, h);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:84:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kdetections[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   84 |     detections.[01;31m[Kpush_back[m[K(det);
+      |                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:40:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   40 | ection> YOLODetector::inference(const cv::Mat &blob, [01;35m[Kcv::Size img_size[m[K)
+      |                                                      [01;35m[K~~~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K At global scope:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:90:13:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ has not been declared
+   90 | std::string [01;31m[KYOLODetector[m[K::run(const cv::Mat &image)
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In function ‘[01m[Kstd::string run(const cv::Mat&)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:95:13:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kempty[m[K’ in ‘[01m[Kdets[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   95 |   if (!dets.[01;31m[Kempty[m[K())
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_armor[m[K’ was not declared in this scope
+   97 |     [01;31m[Klatest_armor[m[K = "armor_" + std::to_string(dets[0].class_id + 1);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:97:50:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+   97 |     latest_armor = "armor_" + std::to_string(dets[01;31m[K[[m[K0].class_id + 1);
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_armor[m[K’ was not declared in this scope
+  101 |     [01;31m[Klatest_armor[m[K = "armor";
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:104:10:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_armor[m[K’ was not declared in this scope
+  104 |   return [01;31m[Klatest_armor[m[K;
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K At global scope:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:107:13:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ has not been declared
+  107 | std::string [01;31m[KYOLODetector[m[K::getLatestArmor() const
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:107:44:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kstd::string getLatestArmor()[m[K’ cannot have cv-qualifier
+  107 | std::string YOLODetector::getLatestArmor() [01;31m[Kconst[m[K
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In function ‘[01m[Kstd::string getLatestArmor()[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:109:10:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_armor[m[K’ was not declared in this scope; did you mean ‘[01m[KgetLatestArmor[m[K’?
+  109 |   return [01;31m[Klatest_armor[m[K;
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+      |          [32m[KgetLatestArmor[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:[m[K At global scope:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:39:21:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ was not declared in this scope
+   39 |     std::shared_ptr<[01;31m[KYOLODetector[m[K> detector;
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:39:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   39 |     std::shared_ptr<YOLODetector[01;31m[K>[m[K detector;
+      |                                 [01;31m[K^[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:[m[K In constructor ‘[01m[KLocateNode::LocateNode(std::string)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:32:37:[m[K [01;31m[Kerror: [m[K‘[01m[KYOLODetector[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetector[m[K’?
+   32 |         detector = std::make_shared<[01;31m[KYOLODetector[m[K>();
+      |                                     [01;31m[K^~~~~~~~~~~~[m[K
+      |                                     [32m[Kdetector[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:32:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   32 |         detector = [01;31m[Kstd::make_shared<YOLODetector>()[m[K;
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:10[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:40[m[K,
+                 from [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:32:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 |         detector = [01;31m[Kstd::make_shared<YOLODetector>()[m[K;
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:[m[K In member function ‘[01m[Kvoid LocateNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:112:29:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  112 |                     detector[01;31m[K->[m[Krun(image);
+      |                             [01;31m[K^~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:113:49:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  113 |                     std::string armor = detector[01;31m[K->[m[KgetLatestArmor();
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:335:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  335 |         for (int i = 0; [01;35m[Ki < armor_types.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:344:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  344 |         for (int i = 0; [01;35m[Ki < rectangle_corners_list.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:362:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  362 |         for (int i = 0; [01;35m[Ki < sphere_corners_list.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:379:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  379 |         for (int i = 0; [01;35m[Ki < midpoint_corners_list.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:196:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_spheres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  196 |         int [01;35m[Kvalid_spheres[m[K = 0;
+      |             [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/yolo_detector_node.dir/build.make:76: CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/yolo_detector_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

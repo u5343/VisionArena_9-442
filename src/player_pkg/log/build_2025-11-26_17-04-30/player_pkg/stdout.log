@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target CroppingNode[0m
+[100%] Built target CroppingNode
+-- Install configuration: ""
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/lib/player_pkg/CroppingNode
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.sh
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.dsv
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.bash
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.sh
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.zsh
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.dsv
+-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.dsv
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.xml

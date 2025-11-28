@@ -1,0 +1,139 @@
+[0.000000] (-) TimerEvent: {}
+[0.001226] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.001355] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.009053] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.011686] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.011811] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', '--', '-j8', '-l8'], 'cwd': '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jiangping'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1346'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a44f3d390a9042ad84a824d06926b4de'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1346,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1346'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/12976c1f_51e5_4a33_84a8_5119066ee981'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WTQJG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.435'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a44f3d390a9042ad84a824d06926b4de'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.051617] (player_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099709] (-) TimerEvent: {}
+[0.188974] (player_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.200311] (-) TimerEvent: {}
+[0.251392] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.256419] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.272018] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.290831] (player_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.300558] (-) TimerEvent: {}
+[0.312046] (player_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.344282] (player_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.349742] (player_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.401178] (-) TimerEvent: {}
+[0.451184] (player_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.501815] (-) TimerEvent: {}
+[0.527372] (player_pkg) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[0.594845] (player_pkg) StdoutLine: {'line': b'-- Found pose_msg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/pose_msg/share/pose_msg/cmake)\n'}
+[0.602042] (-) TimerEvent: {}
+[0.612919] (player_pkg) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.638284] (player_pkg) StdoutLine: {'line': b'-- Found referee_pkg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/referee_pkg/share/referee_pkg/cmake)\n'}
+[0.702305] (-) TimerEvent: {}
+[0.712291] (player_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.729571] (player_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.733819] (player_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg\n'}
+[0.771476] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/TestNode.dir/src/t.cpp.o\x1b[0m\n'}
+[0.802563] (-) TimerEvent: {}
+[0.903617] (-) TimerEvent: {}
+[1.004656] (-) TimerEvent: {}
+[1.105436] (-) TimerEvent: {}
+[1.206467] (-) TimerEvent: {}
+[1.307336] (-) TimerEvent: {}
+[1.408417] (-) TimerEvent: {}
+[1.510052] (-) TimerEvent: {}
+[1.610685] (-) TimerEvent: {}
+[1.711425] (-) TimerEvent: {}
+[1.812332] (-) TimerEvent: {}
+[1.912903] (-) TimerEvent: {}
+[2.013570] (-) TimerEvent: {}
+[2.114312] (-) TimerEvent: {}
+[2.215310] (-) TimerEvent: {}
+[2.316238] (-) TimerEvent: {}
+[2.416871] (-) TimerEvent: {}
+[2.517632] (-) TimerEvent: {}
+[2.618219] (-) TimerEvent: {}
+[2.719347] (-) TimerEvent: {}
+[2.819975] (-) TimerEvent: {}
+[2.920721] (-) TimerEvent: {}
+[3.021621] (-) TimerEvent: {}
+[3.122123] (-) TimerEvent: {}
+[3.222933] (-) TimerEvent: {}
+[3.323543] (-) TimerEvent: {}
+[3.424212] (-) TimerEvent: {}
+[3.525268] (-) TimerEvent: {}
+[3.626305] (-) TimerEvent: {}
+[3.727039] (-) TimerEvent: {}
+[3.828016] (-) TimerEvent: {}
+[3.928501] (-) TimerEvent: {}
+[4.029435] (-) TimerEvent: {}
+[4.130896] (-) TimerEvent: {}
+[4.231711] (-) TimerEvent: {}
+[4.332583] (-) TimerEvent: {}
+[4.433490] (-) TimerEvent: {}
+[4.534501] (-) TimerEvent: {}
+[4.635174] (-) TimerEvent: {}
+[4.736022] (-) TimerEvent: {}
+[4.836880] (-) TimerEvent: {}
+[4.937639] (-) TimerEvent: {}
+[5.038348] (-) TimerEvent: {}
+[5.139021] (-) TimerEvent: {}
+[5.239953] (-) TimerEvent: {}
+[5.340862] (-) TimerEvent: {}
+[5.441926] (-) TimerEvent: {}
+[5.542931] (-) TimerEvent: {}
+[5.643683] (-) TimerEvent: {}
+[5.744197] (-) TimerEvent: {}
+[5.844670] (-) TimerEvent: {}
+[5.945544] (-) TimerEvent: {}
+[6.046339] (-) TimerEvent: {}
+[6.147050] (-) TimerEvent: {}
+[6.247792] (-) TimerEvent: {}
+[6.348686] (-) TimerEvent: {}
+[6.449619] (-) TimerEvent: {}
+[6.550693] (-) TimerEvent: {}
+[6.651406] (-) TimerEvent: {}
+[6.752385] (-) TimerEvent: {}
+[6.853011] (-) TimerEvent: {}
+[6.953718] (-) TimerEvent: {}
+[7.054679] (-) TimerEvent: {}
+[7.155409] (-) TimerEvent: {}
+[7.256452] (-) TimerEvent: {}
+[7.357317] (-) TimerEvent: {}
+[7.458415] (-) TimerEvent: {}
+[7.559363] (-) TimerEvent: {}
+[7.660757] (-) TimerEvent: {}
+[7.761625] (-) TimerEvent: {}
+[7.862615] (-) TimerEvent: {}
+[7.963778] (-) TimerEvent: {}
+[7.979054] (player_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable TestNode\x1b[0m\n'}
+[8.064412] (-) TimerEvent: {}
+[8.165151] (-) TimerEvent: {}
+[8.266067] (-) TimerEvent: {}
+[8.327266] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405\n'}
+[8.328819] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405\n'}
+[8.366288] (-) TimerEvent: {}
+[8.466902] (-) TimerEvent: {}
+[8.567650] (-) TimerEvent: {}
+[8.668443] (-) TimerEvent: {}
+[8.768961] (-) TimerEvent: {}
+[8.771079] (player_pkg) StdoutLine: {'line': b'[100%] Built target TestNode\n'}
+[8.783452] (player_pkg) CommandEnded: {'returncode': 0}
+[8.784077] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'install'}
+[8.793444] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'], 'cwd': '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jiangping'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1346'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a44f3d390a9042ad84a824d06926b4de'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1346,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1346'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/12976c1f_51e5_4a33_84a8_5119066ee981'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WTQJG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.435'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a44f3d390a9042ad84a824d06926b4de'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.801336] (player_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.803127] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/lib/player_pkg/TestNode\n'}
+[8.809995] (player_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/lib/player_pkg/TestNode" to ""\n'}
+[8.810429] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg\n'}
+[8.810497] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg\n'}
+[8.810538] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh\n'}
+[8.810571] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv\n'}
+[8.811011] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.sh\n'}
+[8.811470] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.dsv\n'}
+[8.811721] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.bash\n'}
+[8.811787] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.sh\n'}
+[8.811843] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.zsh\n'}
+[8.811884] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.dsv\n'}
+[8.812762] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.dsv\n'}
+[8.812824] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/packages/player_pkg\n'}
+[8.812861] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake\n'}
+[8.812892] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake\n'}
+[8.812923] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.xml\n'}
+[8.815229] (player_pkg) CommandEnded: {'returncode': 0}
+[8.838752] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 0}
+[8.840164] (-) EventReactorShutdown: {}

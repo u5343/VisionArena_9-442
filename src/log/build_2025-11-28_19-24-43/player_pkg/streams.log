@@ -1,0 +1,55 @@
+[0.017s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/install/player_pkg
+[0.188s] -- The C compiler identification is GNU 11.4.0
+[0.305s] -- The CXX compiler identification is GNU 11.4.0
+[0.324s] -- Detecting C compiler ABI info
+[0.409s] -- Detecting C compiler ABI info - done
+[0.412s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.413s] -- Detecting C compile features
+[0.415s] -- Detecting C compile features - done
+[0.420s] -- Detecting CXX compiler ABI info
+[0.499s] -- Detecting CXX compiler ABI info - done
+[0.504s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.504s] -- Detecting CXX compile features
+[0.504s] -- Detecting CXX compile features - done
+[0.517s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.640s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.756s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.851s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.859s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.877s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.906s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.935s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.020s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.027s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.164s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.189s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.222s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.238s] -- Looking for pthread.h
+[1.316s] -- Looking for pthread.h - found
+[1.317s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.391s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.392s] -- Found Threads: TRUE  
+[1.482s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.536s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.549s] -- Found OpenCV: /usr/local (found version "4.5.5") 
+[1.552s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[1.613s] [31mCMake Error at CMakeLists.txt:20 (find_package):
+[1.613s]   By not providing "Findpose_msg.cmake" in CMAKE_MODULE_PATH this project has
+[1.614s]   asked CMake to find a package configuration file provided by "pose_msg",
+[1.614s]   but CMake did not find one.
+[1.614s] 
+[1.614s]   Could not find a package configuration file provided by "pose_msg" with any
+[1.614s]   of the following names:
+[1.614s] 
+[1.614s]     pose_msgConfig.cmake
+[1.614s]     pose_msg-config.cmake
+[1.614s] 
+[1.614s]   Add the installation prefix of "pose_msg" to CMAKE_PREFIX_PATH or set
+[1.614s]   "pose_msg_DIR" to a directory containing one of the above files.  If
+[1.614s]   "pose_msg" provides a separate development package or SDK, be sure it has
+[1.614s]   been installed.
+[1.614s] 
+[1.614s] [0m
+[1.614s] -- Configuring incomplete, errors occurred!
+[1.614s] See also "/home/jiangping/Vision_Arena_2025/src/build/player_pkg/CMakeFiles/CMakeOutput.log".
+[1.628s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/build/player_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/install/player_pkg

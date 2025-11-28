@@ -1,0 +1,2 @@
+Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/yolo_detector': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/player_pkg/install/yolo_detector
+Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/yolo_detector' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/player_pkg/install/yolo_detector

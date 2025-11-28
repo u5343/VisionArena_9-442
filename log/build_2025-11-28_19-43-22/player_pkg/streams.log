@@ -1,0 +1,65 @@
+[0.022s] Invoking command in '/home/jiangping/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/build/player_pkg -- -j8 -l8
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target yolo_detector_node[0m
+[0.114s] [ 50%] [32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o[0m
+[3.068s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.068s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.068s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.068s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.068s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.068s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.069s]                  from [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:7[m[K:
+[3.069s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:[m[K In member function ‘[01m[Kvoid LocateNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.069s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:113:53:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.069s]   113 |                     RCLCPP_INFO(this->get_logger(), [01;35m[K"detected:%s"[m[K, armor);
+[3.069s]       |                                                     [01;35m[K^~~~~~~~~~~~~[m[K
+[3.069s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:113:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.069s]   113 |                  RCLCPP_INFO(this->get_logger(), "detected:[01;36m[K%s[m[K", armor);
+[3.069s]       |                                                            [01;36m[K~^[m[K
+[3.069s]       |                                                             [01;36m[K|[m[K
+[3.069s]       |                                                             [01;36m[Kchar*[m[K
+[3.069s] 
+[3.072s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:334:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.072s]   334 |         for (int i = 0; [01;35m[Ki < armor_types.size()[m[K; i++)
+[3.072s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[3.072s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:343:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.072s]   343 |         for (int i = 0; [01;35m[Ki < rectangle_corners_list.size()[m[K; i++)
+[3.072s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.072s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:361:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.072s]   361 |         for (int i = 0; [01;35m[Ki < sphere_corners_list.size()[m[K; i++)
+[3.073s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.073s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:378:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.073s]   378 |         for (int i = 0; [01;35m[Ki < midpoint_corners_list.size()[m[K; i++)
+[3.073s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.073s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:195:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_spheres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.073s]   195 |         int [01;35m[Kvalid_spheres[m[K = 0;
+[3.073s]       |             [01;35m[K^~~~~~~~~~~~~[m[K
+[9.285s] [100%] [32m[1mLinking CXX executable yolo_detector_node[0m
+[9.569s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405
+[9.569s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405
+[9.995s] [100%] Built target yolo_detector_node
+[10.009s] Invoked command in '/home/jiangping/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/build/player_pkg -- -j8 -l8
+[10.034s] Invoking command in '/home/jiangping/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jiangping/Vision_Arena_2025/build/player_pkg
+[10.044s] -- Install configuration: ""
+[10.046s] -- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node
+[10.053s] -- Set runtime path of "/home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node" to "/home/jiangping/onnxruntime-linux-x64-1.23.2/lib:/opt/ros/humble/lib:/home/jiangping/Vision_Arena_2025/install/pose_msg/lib:/home/jiangping/Vision_Arena_2025/install/referee_pkg/lib:/usr/local/lib"
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.sh
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.dsv
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.bash
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.sh
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.zsh
+[10.053s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.dsv
+[10.053s] -- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.dsv
+[10.055s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+[10.055s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+[10.055s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+[10.055s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.xml
+[10.057s] Invoked command in '/home/jiangping/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jiangping/Vision_Arena_2025/build/player_pkg

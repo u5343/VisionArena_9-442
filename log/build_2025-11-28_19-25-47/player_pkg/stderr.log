@@ -1,0 +1,48 @@
+In file included from [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:13[m[K:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In constructor ‘[01m[KYOLODetector::YOLODetector()[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:30:31:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+   30 |     std::string getLatestArmor[01;35m[K()[m[K const
+      |                               [01;35m[K^~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:30:31:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+   30 |     std::string getLatestArmor[01;36m[K()[m[K const
+      |                               [01;36m[K^~[m[K
+      |                               [31m[K--[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:31:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   31 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In member function ‘[01m[Kvoid YOLODetector::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_armor_[m[K’ was not declared in this scope; did you mean ‘[01m[Klatest_armor[m[K’?
+   98 |         [01;31m[Klatest_armor_[m[K = "armor" + std::to_string(id);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Klatest_armor[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_armor_[m[K’ was not declared in this scope; did you mean ‘[01m[Klatest_armor[m[K’?
+  102 |         [01;31m[Klatest_armor_[m[K = "none";
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Klatest_armor[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:[m[K In member function ‘[01m[Kstd::vector<Detection> YOLODetector::postprocess(float*, const std::vector<long int, std::allocator<long int> >&, const Size&)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/yolo_detect.hpp:163:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_classes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  163 |     int [01;35m[Knum_classes[m[K = num_data - 4;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:[m[K In member function ‘[01m[Kvoid LocateNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:110:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector[m[K’ was not declared in this scope; did you mean ‘[01m[KDetection[m[K’?
+  110 |                     std::string armor = [01;31m[Kdetector[m[K->getLatestArmor();
+      |                                         [01;31m[K^~~~~~~~[m[K
+      |                                         [32m[KDetection[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:331:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  331 |         for (int i = 0; [01;35m[Ki < armor_types.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:340:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  340 |         for (int i = 0; [01;35m[Ki < rectangle_corners_list.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:358:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  358 |         for (int i = 0; [01;35m[Ki < sphere_corners_list.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:375:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  375 |         for (int i = 0; [01;35m[Ki < midpoint_corners_list.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:192:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_spheres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  192 |         int [01;35m[Kvalid_spheres[m[K = 0;
+      |             [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/yolo_detector_node.dir/build.make:76: CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/yolo_detector_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

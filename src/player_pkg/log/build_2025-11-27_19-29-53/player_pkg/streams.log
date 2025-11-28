@@ -1,0 +1,29 @@
+[0.010s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg
+[0.023s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.111s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.129s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.130s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.134s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.139s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.146s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.165s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.165s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.241s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.271s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.286s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.339s] -- Configuring done
+[0.357s] -- Generating done
+[0.363s] -- Build files have been written to: /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg
+[0.371s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg
+[0.373s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+[0.413s] gmake[2]: *** No rule to make target '/usr/local/lib/libonnxruntime.so', needed by 'yolo_detector_node'.  Stop.
+[0.413s] gmake[2]: *** Waiting for unfinished jobs....
+[0.420s] [ 50%] [32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/test.cpp.o[0m
+[0.764s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/test.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Konnxruntime_cxx_api.h: No such file or directory
+[0.764s]     5 | #include [01;31m[K<onnxruntime_cxx_api.h>[m[K
+[0.765s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.765s] compilation terminated.
+[0.769s] gmake[2]: *** [CMakeFiles/yolo_detector_node.dir/build.make:76: CMakeFiles/yolo_detector_node.dir/src/test.cpp.o] Error 1
+[0.769s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/yolo_detector_node.dir/all] Error 2
+[0.769s] gmake: *** [Makefile:146: all] Error 2
+[0.772s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8

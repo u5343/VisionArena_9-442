@@ -1,0 +1,44 @@
+[0.020s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+[0.059s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.199s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.277s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.280s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.293s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.333s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.397s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.401s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.529s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.609s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.686s] -- Found pose_msg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/pose_msg/share/pose_msg/cmake)
+[0.706s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.737s] -- Found referee_pkg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/referee_pkg/share/referee_pkg/cmake)
+[0.814s] -- Configuring done
+[0.833s] -- Generating done
+[0.838s] -- Build files have been written to: /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg
+[0.879s] [ 50%] [32mBuilding CXX object CMakeFiles/CroppingNode.dir/src/t.cpp.o[0m
+[8.537s] [100%] [32m[1mLinking CXX executable CroppingNode[0m
+[8.820s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405
+[8.820s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405
+[9.213s] [100%] Built target CroppingNode
+[9.227s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+[9.238s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg
+[9.245s] -- Install configuration: ""
+[9.245s] -- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/lib/player_pkg/CroppingNode
+[9.251s] -- Set runtime path of "/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/lib/player_pkg/CroppingNode" to ""
+[9.251s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+[9.251s] -- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+[9.252s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+[9.253s] -- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+[9.253s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.sh
+[9.253s] -- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.dsv
+[9.253s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.bash
+[9.253s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.sh
+[9.253s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.zsh
+[9.253s] -- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.dsv
+[9.254s] -- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.dsv
+[9.254s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+[9.254s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+[9.254s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+[9.254s] -- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.xml
+[9.257s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg

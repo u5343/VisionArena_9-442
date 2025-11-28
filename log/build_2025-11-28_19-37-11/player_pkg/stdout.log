@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target yolo_detector_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o[0m
+[100%] [32m[1mLinking CXX executable yolo_detector_node[0m
+[100%] Built target yolo_detector_node
+-- Install configuration: ""
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node
+-- Set runtime path of "/home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node" to "/home/jiangping/onnxruntime-linux-x64-1.23.2/lib:/opt/ros/humble/lib:/home/jiangping/Vision_Arena_2025/install/pose_msg/lib:/home/jiangping/Vision_Arena_2025/install/referee_pkg/lib:/usr/local/lib"
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.sh
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.dsv
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.bash
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.sh
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.zsh
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.dsv
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.dsv
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.xml

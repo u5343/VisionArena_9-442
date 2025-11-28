@@ -1,0 +1,36 @@
+[0.022s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+[0.134s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.290s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.350s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.355s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.368s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.475s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.480s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.601s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.703s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.795s] -- Found pose_msg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/pose_msg/share/pose_msg/cmake)
+[0.817s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.848s] -- Found referee_pkg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/referee_pkg/share/referee_pkg/cmake)
+[0.880s] -- Configuring incomplete, errors occurred!
+[0.880s] See also "/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg/CMakeFiles/CMakeOutput.log".
+[0.880s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[0.880s]   By not providing "FindYOLOv5.cmake" in CMAKE_MODULE_PATH this project has
+[0.880s]   asked CMake to find a package configuration file provided by "YOLOv5", but
+[0.880s]   CMake did not find one.
+[0.880s] 
+[0.880s]   Could not find a package configuration file provided by "YOLOv5" with any
+[0.881s]   of the following names:
+[0.881s] 
+[0.881s]     YOLOv5Config.cmake
+[0.881s]     yolov5-config.cmake
+[0.881s] 
+[0.881s]   Add the installation prefix of "YOLOv5" to CMAKE_PREFIX_PATH or set
+[0.881s]   "YOLOv5_DIR" to a directory containing one of the above files.  If "YOLOv5"
+[0.881s]   provides a separate development package or SDK, be sure it has been
+[0.881s]   installed.
+[0.881s] 
+[0.881s] [0m
+[0.887s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.890s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8

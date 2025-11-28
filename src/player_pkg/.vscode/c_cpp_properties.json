@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/jiangping/Vision_Arena_2025/install/target_model_pkg/include/**",
+                "/home/jiangping/Vision_Arena_2025/install/referee_pkg/include/**",
+                "/home/jiangping/Vision_Arena_2025/install/pose_msg/include/**",
+                "/home/jiangping/libtorch/include/**",
+                "/home/jiangping/onnxruntime-linux-x64-1.23.2/include/**",
+                "/opt/ros/humble/include/**",
+                "/usr/include/**",
+                "/home/jiangping/libtorch/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

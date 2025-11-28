@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000179] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.000226] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.007508] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.010205] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.011002] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', '--', '-j8', '-l8'], 'cwd': '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CONDA_BACKUP_QT_XCB_GL_INTEGRATION', ''), ('HOME', '/home/jiangping'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1285'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8b24249b50f0831931ff48f56927aaf9'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/src/player_pkg/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jiangping/anaconda3/bin:/home/jiangping/anaconda3/condabin:/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1285,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1285'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4cc3b8b7_f8dc_44fd_b033_fe010db88bb6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TKCKG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('QT_XCB_GL_INTEGRATION', 'none'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/jiangping/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/jiangping/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/jiangping/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8b24249b50f0831931ff48f56927aaf9'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/jiangping/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg:/opt/ros/humble')]), 'shell': False}
+[0.095891] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/CroppingNode.dir/src/test.cpp.o\x1b[0m\n'}
+[0.099070] (-) TimerEvent: {}
+[0.199975] (-) TimerEvent: {}
+[0.300626] (-) TimerEvent: {}
+[0.401946] (-) TimerEvent: {}
+[0.502804] (-) TimerEvent: {}
+[0.603359] (-) TimerEvent: {}
+[0.704016] (-) TimerEvent: {}
+[0.804958] (-) TimerEvent: {}
+[0.905903] (-) TimerEvent: {}
+[1.006920] (-) TimerEvent: {}
+[1.107894] (-) TimerEvent: {}
+[1.208492] (-) TimerEvent: {}
+[1.309232] (-) TimerEvent: {}
+[1.409907] (-) TimerEvent: {}
+[1.510872] (-) TimerEvent: {}
+[1.611666] (-) TimerEvent: {}
+[1.712868] (-) TimerEvent: {}
+[1.813836] (-) TimerEvent: {}
+[1.914719] (-) TimerEvent: {}
+[2.016021] (-) TimerEvent: {}
+[2.116833] (-) TimerEvent: {}
+[2.217752] (-) TimerEvent: {}
+[2.318567] (-) TimerEvent: {}
+[2.419459] (-) TimerEvent: {}
+[2.520016] (-) TimerEvent: {}
+[2.621139] (-) TimerEvent: {}
+[2.722118] (-) TimerEvent: {}
+[2.823166] (-) TimerEvent: {}
+[2.924271] (-) TimerEvent: {}
+[3.024911] (-) TimerEvent: {}
+[3.125935] (-) TimerEvent: {}
+[3.226609] (-) TimerEvent: {}
+[3.327217] (-) TimerEvent: {}
+[3.427898] (-) TimerEvent: {}
+[3.528733] (-) TimerEvent: {}
+[3.629375] (-) TimerEvent: {}
+[3.730444] (-) TimerEvent: {}
+[3.831428] (-) TimerEvent: {}
+[3.932301] (-) TimerEvent: {}
+[4.032925] (-) TimerEvent: {}
+[4.133423] (-) TimerEvent: {}
+[4.234538] (-) TimerEvent: {}
+[4.335531] (-) TimerEvent: {}
+[4.435988] (-) TimerEvent: {}
+[4.536561] (-) TimerEvent: {}
+[4.637530] (-) TimerEvent: {}
+[4.738166] (-) TimerEvent: {}
+[4.838984] (-) TimerEvent: {}
+[4.939905] (-) TimerEvent: {}
+[5.040603] (-) TimerEvent: {}
+[5.141158] (-) TimerEvent: {}
+[5.242205] (-) TimerEvent: {}
+[5.343371] (-) TimerEvent: {}
+[5.443978] (-) TimerEvent: {}
+[5.544831] (-) TimerEvent: {}
+[5.645755] (-) TimerEvent: {}
+[5.746493] (-) TimerEvent: {}
+[5.847466] (-) TimerEvent: {}
+[5.948284] (-) TimerEvent: {}
+[6.048864] (-) TimerEvent: {}
+[6.149740] (-) TimerEvent: {}
+[6.250800] (-) TimerEvent: {}
+[6.351507] (-) TimerEvent: {}
+[6.452297] (-) TimerEvent: {}
+[6.552965] (-) TimerEvent: {}
+[6.653647] (-) TimerEvent: {}
+[6.754335] (-) TimerEvent: {}
+[6.855004] (-) TimerEvent: {}
+[6.955984] (-) TimerEvent: {}
+[7.056773] (-) TimerEvent: {}
+[7.157260] (-) TimerEvent: {}
+[7.257956] (-) TimerEvent: {}
+[7.358978] (-) TimerEvent: {}
+[7.459829] (-) TimerEvent: {}
+[7.560545] (-) TimerEvent: {}
+[7.661596] (-) TimerEvent: {}
+[7.762509] (-) TimerEvent: {}
+[7.863455] (-) TimerEvent: {}
+[7.964546] (-) TimerEvent: {}
+[8.065490] (-) TimerEvent: {}
+[8.166373] (-) TimerEvent: {}
+[8.266869] (-) TimerEvent: {}
+[8.367483] (-) TimerEvent: {}
+[8.468896] (-) TimerEvent: {}
+[8.569955] (-) TimerEvent: {}
+[8.670710] (-) TimerEvent: {}
+[8.771472] (-) TimerEvent: {}
+[8.872481] (-) TimerEvent: {}
+[8.973568] (-) TimerEvent: {}
+[9.074419] (-) TimerEvent: {}
+[9.174932] (-) TimerEvent: {}
+[9.275568] (-) TimerEvent: {}
+[9.376437] (-) TimerEvent: {}
+[9.477179] (-) TimerEvent: {}
+[9.577995] (-) TimerEvent: {}
+[9.679071] (-) TimerEvent: {}
+[9.779829] (-) TimerEvent: {}
+[9.880208] (-) TimerEvent: {}
+[9.981128] (-) TimerEvent: {}
+[10.082062] (-) TimerEvent: {}
+[10.182977] (-) TimerEvent: {}
+[10.283750] (-) TimerEvent: {}
+[10.384489] (-) TimerEvent: {}
+[10.485130] (-) TimerEvent: {}
+[10.586039] (-) TimerEvent: {}
+[10.687164] (-) TimerEvent: {}
+[10.787842] (-) TimerEvent: {}
+[10.888927] (-) TimerEvent: {}
+[10.990029] (-) TimerEvent: {}
+[11.090497] (-) TimerEvent: {}
+[11.191703] (-) TimerEvent: {}
+[11.292986] (-) TimerEvent: {}
+[11.394043] (-) TimerEvent: {}
+[11.494930] (-) TimerEvent: {}
+[11.595619] (-) TimerEvent: {}
+[11.696702] (-) TimerEvent: {}
+[11.797851] (-) TimerEvent: {}
+[11.898637] (-) TimerEvent: {}
+[11.999210] (-) TimerEvent: {}
+[12.100035] (-) TimerEvent: {}
+[12.200735] (-) TimerEvent: {}
+[12.301281] (-) TimerEvent: {}
+[12.402135] (-) TimerEvent: {}
+[12.502845] (-) TimerEvent: {}
+[12.603658] (-) TimerEvent: {}
+[12.704848] (-) TimerEvent: {}
+[12.805601] (-) TimerEvent: {}
+[12.906448] (-) TimerEvent: {}
+[13.006920] (-) TimerEvent: {}
+[13.107704] (-) TimerEvent: {}
+[13.208514] (-) TimerEvent: {}
+[13.309081] (-) TimerEvent: {}
+[13.410000] (-) TimerEvent: {}
+[13.510770] (-) TimerEvent: {}
+[13.612035] (-) TimerEvent: {}
+[13.712893] (-) TimerEvent: {}
+[13.813698] (-) TimerEvent: {}
+[13.914406] (-) TimerEvent: {}
+[14.015254] (-) TimerEvent: {}
+[14.115796] (-) TimerEvent: {}
+[14.216342] (-) TimerEvent: {}
+[14.316902] (-) TimerEvent: {}
+[14.417304] (-) TimerEvent: {}
+[14.518089] (-) TimerEvent: {}
+[14.619076] (-) TimerEvent: {}
+[14.719884] (-) TimerEvent: {}
+[14.820968] (-) TimerEvent: {}
+[14.921648] (-) TimerEvent: {}
+[14.989068] (player_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable CroppingNode\x1b[0m\n'}
+[15.022031] (-) TimerEvent: {}
+[15.123134] (-) TimerEvent: {}
+[15.224091] (-) TimerEvent: {}
+[15.268835] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405\n'}
+[15.269460] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405\n'}
+[15.324401] (-) TimerEvent: {}
+[15.424949] (-) TimerEvent: {}
+[15.525799] (-) TimerEvent: {}
+[15.626633] (-) TimerEvent: {}
+[15.687373] (player_pkg) StdoutLine: {'line': b'[100%] Built target CroppingNode\n'}
+[15.698460] (player_pkg) CommandEnded: {'returncode': 0}
+[15.699592] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'install'}
+[15.708871] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'], 'cwd': '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CONDA_BACKUP_QT_XCB_GL_INTEGRATION', ''), ('HOME', '/home/jiangping'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1285'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8b24249b50f0831931ff48f56927aaf9'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/src/player_pkg/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jiangping/anaconda3/bin:/home/jiangping/anaconda3/condabin:/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1285,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1285'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4cc3b8b7_f8dc_44fd_b033_fe010db88bb6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TKCKG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('QT_XCB_GL_INTEGRATION', 'none'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/jiangping/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/jiangping/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/jiangping/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8b24249b50f0831931ff48f56927aaf9'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/jiangping/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg:/opt/ros/humble')]), 'shell': False}
+[15.715472] (player_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.715628] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/lib/player_pkg/CroppingNode\n'}
+[15.721767] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg\n'}
+[15.722602] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg\n'}
+[15.722811] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh\n'}
+[15.722907] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv\n'}
+[15.722979] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.sh\n'}
+[15.723046] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/environment/path.dsv\n'}
+[15.723112] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.bash\n'}
+[15.723153] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.sh\n'}
+[15.723178] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.zsh\n'}
+[15.723203] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/local_setup.dsv\n'}
+[15.723321] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.dsv\n'}
+[15.723356] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/ament_index/resource_index/packages/player_pkg\n'}
+[15.723463] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake\n'}
+[15.723530] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake\n'}
+[15.723621] (player_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg/share/player_pkg/package.xml\n'}
+[15.725504] (player_pkg) CommandEnded: {'returncode': 0}
+[15.727243] (-) TimerEvent: {}
+[15.740171] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 0}
+[15.741383] (-) EventReactorShutdown: {}

@@ -1,0 +1,16 @@
+/home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.sh
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.dsv
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.bash
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.sh
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.zsh
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.dsv
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.dsv
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+/home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.xml

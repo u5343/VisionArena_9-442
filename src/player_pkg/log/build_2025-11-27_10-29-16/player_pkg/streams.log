@@ -1,0 +1,10 @@
+[0.019s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+[0.068s] [ 50%] [32mBuilding CXX object CMakeFiles/CroppingNode.dir/src/test.cpp.o[0m
+[0.321s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/test.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktorch/script.h: No such file or directory
+[0.321s]     6 | #include [01;31m[K<torch/script.h>[m[K
+[0.321s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.321s] compilation terminated.
+[0.326s] gmake[2]: *** [CMakeFiles/CroppingNode.dir/build.make:76: CMakeFiles/CroppingNode.dir/src/test.cpp.o] Error 1
+[0.326s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/CroppingNode.dir/all] Error 2
+[0.326s] gmake: *** [Makefile:146: all] Error 2
+[0.330s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8

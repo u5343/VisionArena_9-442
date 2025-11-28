@@ -1,0 +1,4 @@
+Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg
+Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '0': /usr/bin/cmake /home/jiangping/Vision_Arena_2025/src/player_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jiangping/Vision_Arena_2025/src/player_pkg/install/player_pkg
+Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '2': /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8

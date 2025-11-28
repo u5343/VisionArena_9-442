@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000182] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.000207] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.008447] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.009081] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.011314] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jiangping/Vision_Arena_2025/build/player_pkg', '--', '-j8', '-l8'], 'cwd': '/home/jiangping/Vision_Arena_2025/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jiangping/Vision_Arena_2025/install/target_model_pkg/lib:/home/jiangping/Vision_Arena_2025/install/referee_pkg/lib:/home/jiangping/Vision_Arena_2025/install/camera/lib:/home/jiangping/Vision_Arena_2025/install/pose_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jiangping'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1357'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=fd5cbfecd17847bf788458f769297773'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jiangping/anaconda3/condabin:/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1357,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1357'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac2712e1_b15d_4f02_b54c_d0ab8ee421bc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JR7VG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/install/target_model_pkg:/home/jiangping/Vision_Arena_2025/install/player_pkg:/home/jiangping/Vision_Arena_2025/install/referee_pkg:/home/jiangping/Vision_Arena_2025/install/camera:/home/jiangping/Vision_Arena_2025/install/pose_msg:/home/jiangping/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/jiangping/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/jiangping/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=fd5cbfecd17847bf788458f769297773'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jiangping/Vision_Arena_2025/install/referee_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/install/target_model_pkg:/home/jiangping/Vision_Arena_2025/install/player_pkg:/home/jiangping/Vision_Arena_2025/install/referee_pkg:/home/jiangping/Vision_Arena_2025/install/camera:/home/jiangping/Vision_Arena_2025/install/pose_msg:/home/jiangping/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble')]), 'shell': False}
+[0.056668] (player_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolo_detector_node\x1b[0m\n'}
+[0.077275] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detector_node.dir/src/camera_detect.cpp.o\x1b[0m\n'}
+[0.099241] (-) TimerEvent: {}
+[0.199851] (-) TimerEvent: {}
+[0.300971] (-) TimerEvent: {}
+[0.402204] (-) TimerEvent: {}
+[0.503183] (-) TimerEvent: {}
+[0.603941] (-) TimerEvent: {}
+[0.704789] (-) TimerEvent: {}
+[0.805693] (-) TimerEvent: {}
+[0.906255] (-) TimerEvent: {}
+[1.006756] (-) TimerEvent: {}
+[1.108430] (-) TimerEvent: {}
+[1.209372] (-) TimerEvent: {}
+[1.309976] (-) TimerEvent: {}
+[1.410816] (-) TimerEvent: {}
+[1.511613] (-) TimerEvent: {}
+[1.612379] (-) TimerEvent: {}
+[1.713139] (-) TimerEvent: {}
+[1.813553] (-) TimerEvent: {}
+[1.914330] (-) TimerEvent: {}
+[2.015975] (-) TimerEvent: {}
+[2.116691] (-) TimerEvent: {}
+[2.217221] (-) TimerEvent: {}
+[2.317878] (-) TimerEvent: {}
+[2.418557] (-) TimerEvent: {}
+[2.519310] (-) TimerEvent: {}
+[2.556470] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LocateNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.557147] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:333:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.557357] (player_pkg) StderrLine: {'line': b'  333 |         for (int i = 0; \x1b[01;35m\x1b[Ki < armor_types.size()\x1b[m\x1b[K; i++)\n'}
+[2.557445] (player_pkg) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.557516] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:342:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<cv::Point_<float> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.557588] (player_pkg) StderrLine: {'line': b'  342 |         for (int i = 0; \x1b[01;35m\x1b[Ki < rectangle_corners_list.size()\x1b[m\x1b[K; i++)\n'}
+[2.557629] (player_pkg) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.557768] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:360:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<cv::Point_<float> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.557825] (player_pkg) StderrLine: {'line': b'  360 |         for (int i = 0; \x1b[01;35m\x1b[Ki < sphere_corners_list.size()\x1b[m\x1b[K; i++)\n'}
+[2.557857] (player_pkg) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.557883] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:377:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<cv::Point_<float> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.557910] (player_pkg) StderrLine: {'line': b'  377 |         for (int i = 0; \x1b[01;35m\x1b[Ki < midpoint_corners_list.size()\x1b[m\x1b[K; i++)\n'}
+[2.557934] (player_pkg) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.558201] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/camera_detect.cpp:194:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kvalid_spheres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.558258] (player_pkg) StderrLine: {'line': b'  194 |         int \x1b[01;35m\x1b[Kvalid_spheres\x1b[m\x1b[K = 0;\n'}
+[2.558292] (player_pkg) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.619749] (-) TimerEvent: {}
+[2.720241] (-) TimerEvent: {}
+[2.820752] (-) TimerEvent: {}
+[2.921603] (-) TimerEvent: {}
+[3.022532] (-) TimerEvent: {}
+[3.123311] (-) TimerEvent: {}
+[3.224125] (-) TimerEvent: {}
+[3.325012] (-) TimerEvent: {}
+[3.425515] (-) TimerEvent: {}
+[3.526418] (-) TimerEvent: {}
+[3.627311] (-) TimerEvent: {}
+[3.728547] (-) TimerEvent: {}
+[3.829570] (-) TimerEvent: {}
+[3.930217] (-) TimerEvent: {}
+[4.031396] (-) TimerEvent: {}
+[4.132627] (-) TimerEvent: {}
+[4.233056] (-) TimerEvent: {}
+[4.333899] (-) TimerEvent: {}
+[4.434617] (-) TimerEvent: {}
+[4.535472] (-) TimerEvent: {}
+[4.635937] (-) TimerEvent: {}
+[4.736521] (-) TimerEvent: {}
+[4.837587] (-) TimerEvent: {}
+[4.938335] (-) TimerEvent: {}
+[5.039048] (-) TimerEvent: {}
+[5.139616] (-) TimerEvent: {}
+[5.240554] (-) TimerEvent: {}
+[5.340948] (-) TimerEvent: {}
+[5.441353] (-) TimerEvent: {}
+[5.542425] (-) TimerEvent: {}
+[5.643768] (-) TimerEvent: {}
+[5.744736] (-) TimerEvent: {}
+[5.845653] (-) TimerEvent: {}
+[5.946745] (-) TimerEvent: {}
+[6.047645] (-) TimerEvent: {}
+[6.148579] (-) TimerEvent: {}
+[6.249282] (-) TimerEvent: {}
+[6.350162] (-) TimerEvent: {}
+[6.450937] (-) TimerEvent: {}
+[6.551930] (-) TimerEvent: {}
+[6.652590] (-) TimerEvent: {}
+[6.753060] (-) TimerEvent: {}
+[6.853863] (-) TimerEvent: {}
+[6.954684] (-) TimerEvent: {}
+[7.055153] (-) TimerEvent: {}
+[7.155622] (-) TimerEvent: {}
+[7.257633] (-) TimerEvent: {}
+[7.358298] (-) TimerEvent: {}
+[7.458728] (-) TimerEvent: {}
+[7.559276] (-) TimerEvent: {}
+[7.602805] (player_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable yolo_detector_node\x1b[0m\n'}
+[7.659391] (-) TimerEvent: {}
+[7.760262] (-) TimerEvent: {}
+[7.860684] (-) TimerEvent: {}
+[7.961183] (-) TimerEvent: {}
+[7.975105] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405\n'}
+[7.979210] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405\n'}
+[8.061413] (-) TimerEvent: {}
+[8.161842] (-) TimerEvent: {}
+[8.262936] (-) TimerEvent: {}
+[8.364199] (-) TimerEvent: {}
+[8.464956] (-) TimerEvent: {}
+[8.558120] (player_pkg) StdoutLine: {'line': b'[100%] Built target yolo_detector_node\n'}
+[8.565009] (-) TimerEvent: {}
+[8.569521] (player_pkg) CommandEnded: {'returncode': 0}
+[8.570813] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'install'}
+[8.580083] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jiangping/Vision_Arena_2025/build/player_pkg'], 'cwd': '/home/jiangping/Vision_Arena_2025/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jiangping/Vision_Arena_2025/install/target_model_pkg/lib:/home/jiangping/Vision_Arena_2025/install/referee_pkg/lib:/home/jiangping/Vision_Arena_2025/install/camera/lib:/home/jiangping/Vision_Arena_2025/install/pose_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jiangping'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1357'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=fd5cbfecd17847bf788458f769297773'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jiangping/anaconda3/condabin:/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1357,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1357'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac2712e1_b15d_4f02_b54c_d0ab8ee421bc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JR7VG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/install/target_model_pkg:/home/jiangping/Vision_Arena_2025/install/player_pkg:/home/jiangping/Vision_Arena_2025/install/referee_pkg:/home/jiangping/Vision_Arena_2025/install/camera:/home/jiangping/Vision_Arena_2025/install/pose_msg:/home/jiangping/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/jiangping/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/jiangping/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=fd5cbfecd17847bf788458f769297773'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jiangping/Vision_Arena_2025/install/referee_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jiangping/Vision_Arena_2025/install/target_model_pkg:/home/jiangping/Vision_Arena_2025/install/player_pkg:/home/jiangping/Vision_Arena_2025/install/referee_pkg:/home/jiangping/Vision_Arena_2025/install/camera:/home/jiangping/Vision_Arena_2025/install/pose_msg:/home/jiangping/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble')]), 'shell': False}
+[8.587176] (player_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.587329] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node\n'}
+[8.592484] (player_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/jiangping/Vision_Arena_2025/install/player_pkg/lib/player_pkg/yolo_detector_node" to "/home/jiangping/onnxruntime-linux-x64-1.23.2/lib:/opt/ros/humble/lib:/home/jiangping/Vision_Arena_2025/install/pose_msg/lib:/home/jiangping/Vision_Arena_2025/install/referee_pkg/lib:/usr/local/lib"\n'}
+[8.592631] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg\n'}
+[8.599541] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg\n'}
+[8.599839] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh\n'}
+[8.600235] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv\n'}
+[8.600344] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.sh\n'}
+[8.600492] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.dsv\n'}
+[8.600652] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.bash\n'}
+[8.600813] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.sh\n'}
+[8.601134] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.zsh\n'}
+[8.601455] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.dsv\n'}
+[8.601536] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.dsv\n'}
+[8.601620] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/packages/player_pkg\n'}
+[8.601713] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake\n'}
+[8.602054] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake\n'}
+[8.602119] (player_pkg) StdoutLine: {'line': b'-- Installing: /home/jiangping/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.xml\n'}
+[8.605602] (player_pkg) CommandEnded: {'returncode': 0}
+[8.620369] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 0}
+[8.621018] (-) EventReactorShutdown: {}

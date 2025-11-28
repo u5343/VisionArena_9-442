@@ -1,0 +1,300 @@
+[0.000000] (-) TimerEvent: {}
+[0.000220] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.000297] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.008248] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.009212] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.009296] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', '--', '-j8', '-l8'], 'cwd': '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_US:'), ('USER', 'jiangping'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CONDA_BACKUP_QT_XCB_GL_INTEGRATION', ''), ('HOME', '/home/jiangping'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1285'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8b24249b50f0831931ff48f56927aaf9'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jiangping'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jiangping'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jiangping/anaconda3/bin:/home/jiangping/anaconda3/condabin:/opt/ros/humble/bin:/home/jiangping/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jiangping/.local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jiangping-virtual-machine:@/tmp/.ICE-unix/1285,unix/jiangping-virtual-machine:/tmp/.ICE-unix/1285'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4cc3b8b7_f8dc_44fd_b033_fe010db88bb6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TKCKG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('QT_XCB_GL_INTEGRATION', 'none'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/jiangping/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/jiangping/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/jiangping/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8b24249b50f0831931ff48f56927aaf9'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/jiangping/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.033751] (player_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099657] (-) TimerEvent: {}
+[0.116071] (player_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.135804] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.137286] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.140800] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.146346] (player_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.153217] (player_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.171263] (player_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.172237] (player_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200494] (-) TimerEvent: {}
+[0.251400] (player_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.279194] (player_pkg) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[0.301239] (-) TimerEvent: {}
+[0.309276] (player_pkg) StdoutLine: {'line': b'-- Found pose_msg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/pose_msg/share/pose_msg/cmake)\n'}
+[0.316908] (player_pkg) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.328307] (player_pkg) StdoutLine: {'line': b'-- Found referee_pkg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/referee_pkg/share/referee_pkg/cmake)\n'}
+[0.397358] (player_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.401856] (-) TimerEvent: {}
+[0.408188] (player_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.412088] (player_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg\n'}
+[0.448327] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/CroppingNode.dir/src/test.cpp.o\x1b[0m\n'}
+[0.502119] (-) TimerEvent: {}
+[0.602796] (-) TimerEvent: {}
+[0.703694] (-) TimerEvent: {}
+[0.804235] (-) TimerEvent: {}
+[0.904780] (-) TimerEvent: {}
+[1.005424] (-) TimerEvent: {}
+[1.106221] (-) TimerEvent: {}
+[1.207307] (-) TimerEvent: {}
+[1.308148] (-) TimerEvent: {}
+[1.408961] (-) TimerEvent: {}
+[1.509615] (-) TimerEvent: {}
+[1.610174] (-) TimerEvent: {}
+[1.710878] (-) TimerEvent: {}
+[1.811634] (-) TimerEvent: {}
+[1.912586] (-) TimerEvent: {}
+[2.013482] (-) TimerEvent: {}
+[2.114267] (-) TimerEvent: {}
+[2.214855] (-) TimerEvent: {}
+[2.315490] (-) TimerEvent: {}
+[2.416350] (-) TimerEvent: {}
+[2.516860] (-) TimerEvent: {}
+[2.617456] (-) TimerEvent: {}
+[2.718364] (-) TimerEvent: {}
+[2.819132] (-) TimerEvent: {}
+[2.919815] (-) TimerEvent: {}
+[3.020751] (-) TimerEvent: {}
+[3.121858] (-) TimerEvent: {}
+[3.222654] (-) TimerEvent: {}
+[3.323422] (-) TimerEvent: {}
+[3.424236] (-) TimerEvent: {}
+[3.524861] (-) TimerEvent: {}
+[3.625884] (-) TimerEvent: {}
+[3.726766] (-) TimerEvent: {}
+[3.827515] (-) TimerEvent: {}
+[3.928547] (-) TimerEvent: {}
+[4.029684] (-) TimerEvent: {}
+[4.130352] (-) TimerEvent: {}
+[4.230851] (-) TimerEvent: {}
+[4.331512] (-) TimerEvent: {}
+[4.432951] (-) TimerEvent: {}
+[4.533671] (-) TimerEvent: {}
+[4.634589] (-) TimerEvent: {}
+[4.735105] (-) TimerEvent: {}
+[4.835694] (-) TimerEvent: {}
+[4.936377] (-) TimerEvent: {}
+[5.037298] (-) TimerEvent: {}
+[5.138241] (-) TimerEvent: {}
+[5.238870] (-) TimerEvent: {}
+[5.339632] (-) TimerEvent: {}
+[5.440393] (-) TimerEvent: {}
+[5.541310] (-) TimerEvent: {}
+[5.642388] (-) TimerEvent: {}
+[5.743190] (-) TimerEvent: {}
+[5.843798] (-) TimerEvent: {}
+[5.944404] (-) TimerEvent: {}
+[6.044895] (-) TimerEvent: {}
+[6.145537] (-) TimerEvent: {}
+[6.246021] (-) TimerEvent: {}
+[6.346710] (-) TimerEvent: {}
+[6.447356] (-) TimerEvent: {}
+[6.548105] (-) TimerEvent: {}
+[6.648839] (-) TimerEvent: {}
+[6.749523] (-) TimerEvent: {}
+[6.850257] (-) TimerEvent: {}
+[6.951159] (-) TimerEvent: {}
+[7.052195] (-) TimerEvent: {}
+[7.152956] (-) TimerEvent: {}
+[7.253816] (-) TimerEvent: {}
+[7.354531] (-) TimerEvent: {}
+[7.455263] (-) TimerEvent: {}
+[7.556156] (-) TimerEvent: {}
+[7.657336] (-) TimerEvent: {}
+[7.758100] (-) TimerEvent: {}
+[7.858800] (-) TimerEvent: {}
+[7.959275] (-) TimerEvent: {}
+[8.059677] (-) TimerEvent: {}
+[8.160288] (-) TimerEvent: {}
+[8.260955] (-) TimerEvent: {}
+[8.361645] (-) TimerEvent: {}
+[8.462548] (-) TimerEvent: {}
+[8.563170] (-) TimerEvent: {}
+[8.664125] (-) TimerEvent: {}
+[8.765094] (-) TimerEvent: {}
+[8.865628] (-) TimerEvent: {}
+[8.966560] (-) TimerEvent: {}
+[9.067654] (-) TimerEvent: {}
+[9.168255] (-) TimerEvent: {}
+[9.269067] (-) TimerEvent: {}
+[9.369770] (-) TimerEvent: {}
+[9.470617] (-) TimerEvent: {}
+[9.571572] (-) TimerEvent: {}
+[9.672170] (-) TimerEvent: {}
+[9.773109] (-) TimerEvent: {}
+[9.874176] (-) TimerEvent: {}
+[9.974972] (-) TimerEvent: {}
+[10.075793] (-) TimerEvent: {}
+[10.176477] (-) TimerEvent: {}
+[10.277432] (-) TimerEvent: {}
+[10.378185] (-) TimerEvent: {}
+[10.479915] (-) TimerEvent: {}
+[10.580468] (-) TimerEvent: {}
+[10.681112] (-) TimerEvent: {}
+[10.782097] (-) TimerEvent: {}
+[10.882834] (-) TimerEvent: {}
+[10.983430] (-) TimerEvent: {}
+[11.084440] (-) TimerEvent: {}
+[11.185315] (-) TimerEvent: {}
+[11.286294] (-) TimerEvent: {}
+[11.387092] (-) TimerEvent: {}
+[11.487858] (-) TimerEvent: {}
+[11.588851] (-) TimerEvent: {}
+[11.690021] (-) TimerEvent: {}
+[11.790745] (-) TimerEvent: {}
+[11.891446] (-) TimerEvent: {}
+[11.992098] (-) TimerEvent: {}
+[12.092614] (-) TimerEvent: {}
+[12.193253] (-) TimerEvent: {}
+[12.293781] (-) TimerEvent: {}
+[12.394505] (-) TimerEvent: {}
+[12.495325] (-) TimerEvent: {}
+[12.596218] (-) TimerEvent: {}
+[12.696773] (-) TimerEvent: {}
+[12.797787] (-) TimerEvent: {}
+[12.898620] (-) TimerEvent: {}
+[12.999541] (-) TimerEvent: {}
+[13.100588] (-) TimerEvent: {}
+[13.201430] (-) TimerEvent: {}
+[13.302342] (-) TimerEvent: {}
+[13.403091] (-) TimerEvent: {}
+[13.503813] (-) TimerEvent: {}
+[13.604449] (-) TimerEvent: {}
+[13.705381] (-) TimerEvent: {}
+[13.806200] (-) TimerEvent: {}
+[13.907249] (-) TimerEvent: {}
+[14.007903] (-) TimerEvent: {}
+[14.108572] (-) TimerEvent: {}
+[14.209326] (-) TimerEvent: {}
+[14.309923] (-) TimerEvent: {}
+[14.410328] (-) TimerEvent: {}
+[14.511294] (-) TimerEvent: {}
+[14.612276] (-) TimerEvent: {}
+[14.712906] (-) TimerEvent: {}
+[14.788806] (player_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable CroppingNode\x1b[0m\n'}
+[14.813146] (-) TimerEvent: {}
+[14.913602] (-) TimerEvent: {}
+[15.014104] (-) TimerEvent: {}
+[15.114887] (-) TimerEvent: {}
+[15.215441] (-) TimerEvent: {}
+[15.216061] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405\n'}
+[15.220570] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405\n'}
+[15.315660] (-) TimerEvent: {}
+[15.416089] (-) TimerEvent: {}
+[15.516762] (-) TimerEvent: {}
+[15.617494] (-) TimerEvent: {}
+[15.653405] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: warning: relocation against `_ZN3c1019UndefinedTensorImpl10_singletonE' in read-only section `.text._ZN3c1019UndefinedTensorImpl9singletonEv[_ZN3c1019UndefinedTensorImpl9singletonEv]'\n"}
+[15.707745] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, c10::detail::CompileTimeEmptyString)':\n"}
+[15.708000] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c106detail23torchInternalAssertFailEPKcS2_jS2_NS0_22CompileTimeEmptyStringE[_ZN3c106detail23torchInternalAssertFailEPKcS2_jS2_NS0_22CompileTimeEmptyStringE]+0x2e): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*)'\n"}
+[15.708464] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr_target::~intrusive_ptr_target()':\n"}
+[15.708546] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1020intrusive_ptr_targetD2Ev[_ZN3c1020intrusive_ptr_targetD5Ev]+0x166): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.708621] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN3c1020intrusive_ptr_targetD2Ev[_ZN3c1020intrusive_ptr_targetD5Ev]+0x2ea): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.708836] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::Device::validate()':\n"}
+[15.708882] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c106Device8validateEv[_ZN3c106Device8validateEv]+0x88): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.708918] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN3c106Device8validateEv[_ZN3c106Device8validateEv]+0x125): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.709052] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::impl::ExcludeDispatchKeyGuard::ExcludeDispatchKeyGuard(c10::DispatchKey)':\n"}
+[15.709095] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c104impl23ExcludeDispatchKeyGuardC2ENS_11DispatchKeyE[_ZN3c104impl23ExcludeDispatchKeyGuardC5ENS_11DispatchKeyE]+0x46): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::ExcludeDispatchKeyGuard(c10::DispatchKeySet)'\n"}
+[15.709441] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `caffe2::TypeMeta::fromScalarType(c10::ScalarType)':\n"}
+[15.709607] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN6caffe28TypeMeta14fromScalarTypeEN3c1010ScalarTypeE[_ZN6caffe28TypeMeta14fromScalarTypeEN3c1010ScalarTypeE]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.709662] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `caffe2::TypeMeta::toScalarType()':\n"}
+[15.709696] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN6caffe28TypeMeta12toScalarTypeEv[_ZN6caffe28TypeMeta12toScalarTypeEv]+0x3a): undefined reference to `caffe2::TypeMeta::error_unsupported_typemeta(caffe2::TypeMeta)'\n"}
+[15.709786] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::SymInt::SymInt(long)':\n"}
+[15.709838] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c106SymIntC2El[_ZN3c106SymIntC5El]+0x45): undefined reference to `c10::SymInt::promote_to_negative()'\n"}
+[15.710243] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::AutoDispatchBelowAutograd::AutoDispatchBelowAutograd()':\n"}
+[15.710343] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN2at25AutoDispatchBelowAutogradC2Ev[_ZN2at25AutoDispatchBelowAutogradC5Ev]+0x22): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::ExcludeDispatchKeyGuard(c10::DispatchKeySet)'\n"}
+[15.710397] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::UndefinedTensorImpl::singleton()':\n"}
+[15.710451] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1019UndefinedTensorImpl9singletonEv[_ZN3c1019UndefinedTensorImpl9singletonEv]+0xb): undefined reference to `c10::UndefinedTensorImpl::_singleton'\n"}
+[15.711023] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::permute(c10::ArrayRef<long>) const':\n"}
+[15.711250] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK2at6Tensor7permuteEN3c108ArrayRefIlEE[_ZNK2at6Tensor7permuteEN3c108ArrayRefIlEE]+0x42): undefined reference to `at::_ops::permute::call(at::Tensor const&, c10::ArrayRef<long>)'\n"}
+[15.711406] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::select(long, long) const':\n"}
+[15.711541] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK2at6Tensor6selectEll[_ZNK2at6Tensor6selectEll]+0x53): undefined reference to `at::_ops::select_int::call(at::Tensor const&, long, c10::SymInt)'\n"}
+[15.711692] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::squeeze(long) const':\n"}
+[15.711821] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK2at6Tensor7squeezeEl[_ZNK2at6Tensor7squeezeEl]+0x3a): undefined reference to `at::_ops::squeeze_dim::call(at::Tensor const&, long)'\n"}
+[15.711861] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::clone(c10::optional<c10::MemoryFormat>) const':\n"}
+[15.711924] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK2at6Tensor5cloneEN3c108optionalINS1_12MemoryFormatEEE[_ZNK2at6Tensor5cloneEN3c108optionalINS1_12MemoryFormatEEE]+0x3a): undefined reference to `at::_ops::clone::call(at::Tensor const&, c10::optional<c10::MemoryFormat>)'\n"}
+[15.712057] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::isIntrusivePtr() const':\n"}
+[15.712099] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK3c106IValue14isIntrusivePtrEv[_ZNK3c106IValue14isIntrusivePtrEv]+0x19b): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.712195] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::getTypePtr_<c10::IValue>::call()':\n"}
+[15.712241] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c106detail11getTypePtr_INS_6IValueEE4callEv[_ZN3c106detail11getTypePtr_INS_6IValueEE4callEv]+0x9): undefined reference to `c10::AnyType::get()'\n"}
+[15.712586] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::getTypePtr_<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::call()':\n"}
+[15.712863] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c106detail11getTypePtr_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4callEv[_ZN3c106detail11getTypePtr_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4callEv]+0x9): undefined reference to `c10::StringType::get()'\n"}
+[15.712985] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toComplexDouble() const':\n"}
+[15.713080] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK3c106IValue15toComplexDoubleEv[_ZNK3c106IValue15toComplexDoubleEv]+0xa1): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.713420] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toTensor() &&':\n"}
+[15.713481] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNO3c106IValue8toTensorEv[_ZNO3c106IValue8toTensorEv]+0x38): undefined reference to `c10::IValue::reportToTensorTypeError() const'\n"}
+[15.713516] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toTensor() const &':\n"}
+[15.713545] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNKR3c106IValue8toTensorEv[_ZNKR3c106IValue8toTensorEv]+0x34): undefined reference to `c10::IValue::reportToTensorTypeError() const'\n"}
+[15.713573] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toSymInt() const &':\n"}
+[15.713601] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNKR3c106IValue8toSymIntEv[_ZNKR3c106IValue8toSymIntEv]+0xc8): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.713901] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZNKR3c106IValue8toSymIntEv[_ZNKR3c106IValue8toSymIntEv]+0xfe): undefined reference to `c10::SymInt::SymInt(c10::intrusive_ptr<c10::SymNodeImpl, c10::detail::intrusive_target_default_null_type<c10::SymNodeImpl> >)'\n"}
+[15.714091] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toTuple() &&':\n"}
+[15.714142] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNO3c106IValue7toTupleEv[_ZNO3c106IValue7toTupleEv]+0x9d): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.714457] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::from_blob(void*, c10::ArrayRef<long>, c10::TensorOptions const&)':\n"}
+[15.714516] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN2at9from_blobEPvN3c108ArrayRefIlEERKNS1_13TensorOptionsE[_ZN2at9from_blobEPvN3c108ArrayRefIlEERKNS1_13TensorOptionsE]+0x93): undefined reference to `at::TensorMaker::make_tensor()'\n"}
+[15.714838] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::AutoDispatchBelowAutograd::~AutoDispatchBelowAutograd()':\n"}
+[15.715058] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN2at25AutoDispatchBelowAutogradD2Ev[_ZN2at25AutoDispatchBelowAutogradD5Ev]+0x18): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::~ExcludeDispatchKeyGuard()'\n"}
+[15.715305] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::autograd::AutogradMeta::set_requires_grad(bool, c10::TensorImpl*)':\n"}
+[15.715354] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch8autograd12AutogradMeta17set_requires_gradEbPN3c1010TensorImplE[_ZN5torch8autograd12AutogradMeta17set_requires_gradEbPN3c1010TensorImplE]+0x96): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*)'\n"}
+[15.715386] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::AutogradMetaInterface::AutogradMetaInterface()':\n"}
+[15.715416] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1021AutogradMetaInterfaceC2Ev[_ZN3c1021AutogradMetaInterfaceC5Ev]+0xf): undefined reference to `vtable for c10::AutogradMetaInterface'\n"}
+[15.715926] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::autograd::AutogradMeta::AutogradMeta(c10::TensorImpl*, bool, torch::autograd::Edge)':\n"}
+[15.716230] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch8autograd12AutogradMetaC2EPN3c1010TensorImplEbNS0_4EdgeE[_ZN5torch8autograd12AutogradMetaC5EPN3c1010TensorImplEbNS0_4EdgeE]+0x2d): undefined reference to `vtable for torch::autograd::AutogradMeta'\n"}
+[15.716285] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd12AutogradMetaC2EPN3c1010TensorImplEbNS0_4EdgeE[_ZN5torch8autograd12AutogradMetaC5EPN3c1010TensorImplEbNS0_4EdgeE]+0x1e9): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*)'\n"}
+[15.716321] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd12AutogradMetaC2EPN3c1010TensorImplEbNS0_4EdgeE[_ZN5torch8autograd12AutogradMetaC5EPN3c1010TensorImplEbNS0_4EdgeE]+0x27e): undefined reference to `c10::AutogradMetaInterface::~AutogradMetaInterface()'\n"}
+[15.716421] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::autograd::make_variable(at::Tensor, bool, bool)':\n"}
+[15.716481] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x11e): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'\n"}
+[15.716686] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x167): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'\n"}
+[15.717034] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x27a): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'\n"}
+[15.717303] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x2c3): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'\n"}
+[15.717496] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::tracer::impl::NoTracerDispatchMode::~NoTracerDispatchMode()':\n"}
+[15.717550] (-) TimerEvent: {}
+[15.717643] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN2at6tracer4impl20NoTracerDispatchModeD2Ev[_ZN2at6tracer4impl20NoTracerDispatchModeD5Ev]+0x18): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::~ExcludeDispatchKeyGuard()'\n"}
+[15.717880] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::SourceRange::SourceRange(std::shared_ptr<torch::jit::Source>, unsigned long, unsigned long)':\n"}
+[15.717936] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch3jit11SourceRangeC2ESt10shared_ptrINS0_6SourceEEmm[_ZN5torch3jit11SourceRangeC5ESt10shared_ptrINS0_6SourceEEmm]+0xa9): undefined reference to `torch::jit::StringCordView::iter_for_pos(unsigned long) const'\n"}
+[15.718204] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Method::Method(torch::jit::Method const&)':\n"}
+[15.718268] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch3jit6MethodC2ERKS1_[_ZN5torch3jit6MethodC5ERKS1_]+0x2b): undefined reference to `vtable for torch::jit::Method'\n"}
+[15.718468] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Object::get_method(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const':\n"}
+[15.718527] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x50): undefined reference to `torch::jit::Object::find_method(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'\n"}
+[15.718702] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x111): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[15.718975] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Module::forward(std::vector<c10::IValue, std::allocator<c10::IValue> >, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, c10::IValue, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, c10::IValue> > > const&)':\n"}
+[15.719038] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch3jit6Module7forwardESt6vectorIN3c106IValueESaIS4_EERKSt13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES4_St4hashISD_ESt8equal_toISD_ESaISt4pairIKSD_S4_EEE[_ZN5torch3jit6Module7forwardESt6vectorIN3c106IValueESaIS4_EERKSt13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES4_St4hashISD_ESt8equal_toISD_ESaISt4pairIKSD_S4_EEE]+0xc2): undefined reference to `torch::jit::Method::operator()(std::vector<c10::IValue, std::allocator<c10::IValue> >, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, c10::IValue, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, c10::IValue> > > const&) const'\n"}
+[15.719382] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Module::eval()':\n"}
+[15.719442] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch3jit6Module4evalEv[_ZN5torch3jit6Module4evalEv]+0x1d): undefined reference to `torch::jit::Module::train(bool)'\n"}
+[15.719833] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `YoloPTNode::YoloPTNode()':\n"}
+[15.720244] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN10YoloPTNodeC2Ev[_ZN10YoloPTNodeC5Ev]+0x17d): undefined reference to `torch::jit::load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, c10::optional<c10::Device>, bool)'\n"}
+[15.720300] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNodeC2Ev[_ZN10YoloPTNodeC5Ev]+0x207): undefined reference to `torch::jit::Module::to(c10::Device, bool)'\n"}
+[15.720656] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `YoloPTNode::postprocess(cv::Mat&, at::Tensor&)':\n"}
+[15.720792] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0xa6): undefined reference to `float at::Tensor::item<float>() const'\n"}
+[15.721239] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x129): undefined reference to `int at::Tensor::item<int>() const'\n"}
+[15.721323] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x193): undefined reference to `float at::Tensor::item<float>() const'\n"}
+[15.721358] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x201): undefined reference to `float at::Tensor::item<float>() const'\n"}
+[15.721387] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x26f): undefined reference to `float at::Tensor::item<float>() const'\n"}
+[15.721591] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x2dd): undefined reference to `float at::Tensor::item<float>() const'\n"}
+[15.722162] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::SymNodeImpl, c10::detail::intrusive_target_default_null_type<c10::SymNodeImpl> >::reclaim(c10::SymNodeImpl*)':\n"}
+[15.722264] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_11SymNodeImplENS_6detail34intrusive_target_default_null_typeIS1_EEE7reclaimEPS1_[_ZN3c1013intrusive_ptrINS_11SymNodeImplENS_6detail34intrusive_target_default_null_typeIS1_EEE7reclaimEPS1_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.722688] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `long c10::_maybe_wrap_dim<long>(long, long, bool)':\n"}
+[15.722856] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1015_maybe_wrap_dimIlEET_S1_S1_b[_ZN3c1015_maybe_wrap_dimIlEET_S1_S1_b]+0xab): undefined reference to `long c10::detail::maybe_wrap_dim_slow<long>(long, long, bool)'\n"}
+[15.723059] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::intrusive_ptr_target, c10::UndefinedTensorImpl>::reclaim(c10::intrusive_ptr_target*)':\n"}
+[15.723185] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_20intrusive_ptr_targetENS_19UndefinedTensorImplEE7reclaimEPS1_[_ZN3c1013intrusive_ptrINS_20intrusive_ptr_targetENS_19UndefinedTensorImplEE7reclaimEPS1_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.723407] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::getMaybeFakeTypePtr_<c10::List<c10::IValue>, false>::call()':\n"}
+[15.723489] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c106detail20getMaybeFakeTypePtr_INS_4ListINS_6IValueEEELb0EE4callEv[_ZN3c106detail20getMaybeFakeTypePtr_INS_4ListINS_6IValueEEELb0EE4callEv]+0xef): undefined reference to `c10::ListType::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, c10::Type::SingletonOrSharedTypePtr<c10::Type>)'\n"}
+[15.724176] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::TensorImpl, c10::UndefinedTensorImpl>::retain_()':\n"}
+[15.724390] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_10TensorImplENS_19UndefinedTensorImplEE7retain_Ev[_ZN3c1013intrusive_ptrINS_10TensorImplENS_19UndefinedTensorImplEE7retain_Ev]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.724590] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::ivalue::ComplexHolder, c10::detail::intrusive_target_default_null_type<c10::ivalue::ComplexHolder> >::reclaim(c10::ivalue::ComplexHolder*)':\n"}
+[15.724711] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_6ivalue13ComplexHolderENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_[_ZN3c1013intrusive_ptrINS_6ivalue13ComplexHolderENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.724929] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::ivalue::Tuple, c10::detail::intrusive_target_default_null_type<c10::ivalue::Tuple> >::reclaim(c10::ivalue::Tuple*)':\n"}
+[15.725042] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_6ivalue5TupleENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_[_ZN3c1013intrusive_ptrINS_6ivalue5TupleENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.725391] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::ivalue::Object, c10::detail::intrusive_target_default_null_type<c10::ivalue::Object> >::retain_()':\n"}
+[15.725496] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_6ivalue6ObjectENS_6detail34intrusive_target_default_null_typeIS2_EEE7retain_Ev[_ZN3c1013intrusive_ptrINS_6ivalue6ObjectENS_6detail34intrusive_target_default_null_typeIS2_EEE7retain_Ev]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.725755] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::detail::DictImpl, c10::detail::intrusive_target_default_null_type<c10::detail::DictImpl> >::retain_()':\n"}
+[15.725832] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1013intrusive_ptrINS_6detail8DictImplENS1_34intrusive_target_default_null_typeIS2_EEE7retain_Ev[_ZN3c1013intrusive_ptrINS_6detail8DictImplENS1_34intrusive_target_default_null_typeIS2_EEE7retain_Ev]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'\n"}
+[15.726208] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o:test.cpp:(.text._ZN3c1013intrusive_ptrINS_15VariableVersion14VersionCounterENS_6detail34intrusive_target_default_null_typeIS2_EEEC2EPS2_[_ZN3c1013intrusive_ptrINS_15VariableVersion14VersionCounterENS_6detail34intrusive_target_default_null_typeIS2_EEEC5EPS2_]+0xd3): more undefined references to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)' follow\n"}
+[15.727165] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::SmallVectorTemplateCommon<long, void>::grow_pod(unsigned long, unsigned long)':\n"}
+[15.727274] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN3c1025SmallVectorTemplateCommonIlvE8grow_podEmm[_ZN3c1025SmallVectorTemplateCommonIlvE8grow_podEmm]+0x3e): undefined reference to `c10::SmallVectorBase<unsigned int>::grow_pod(void*, unsigned long, unsigned long)'\n"}
+[15.734264] (player_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Method::~Method()':\n"}
+[15.734331] (player_pkg) StderrLine: {'line': b"test.cpp:(.text._ZN5torch3jit6MethodD2Ev[_ZN5torch3jit6MethodD5Ev]+0x13): undefined reference to `vtable for torch::jit::Method'\n"}
+[15.779519] (player_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: creating DT_TEXTREL in a PIE\n'}
+[15.788581] (player_pkg) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[15.790649] (player_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/CroppingNode.dir/build.make:206: CroppingNode] Error 1\n'}
+[15.791220] (player_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/CroppingNode.dir/all] Error 2\n'}
+[15.791422] (player_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.794238] (player_pkg) CommandEnded: {'returncode': 2}
+[15.803127] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 2}
+[15.813784] (-) EventReactorShutdown: {}

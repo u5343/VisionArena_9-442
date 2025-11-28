@@ -1,0 +1,135 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+-- Found pose_msg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/pose_msg/share/pose_msg/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found referee_pkg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/referee_pkg/share/referee_pkg/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg
+[ 50%] [32mBuilding CXX object CMakeFiles/CroppingNode.dir/src/test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable CroppingNode[0m
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: warning: relocation against `_ZN3c1019UndefinedTensorImpl10_singletonE' in read-only section `.text._ZN3c1019UndefinedTensorImpl9singletonEv[_ZN3c1019UndefinedTensorImpl9singletonEv]'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, c10::detail::CompileTimeEmptyString)':
+test.cpp:(.text._ZN3c106detail23torchInternalAssertFailEPKcS2_jS2_NS0_22CompileTimeEmptyStringE[_ZN3c106detail23torchInternalAssertFailEPKcS2_jS2_NS0_22CompileTimeEmptyStringE]+0x2e): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr_target::~intrusive_ptr_target()':
+test.cpp:(.text._ZN3c1020intrusive_ptr_targetD2Ev[_ZN3c1020intrusive_ptr_targetD5Ev]+0x166): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: test.cpp:(.text._ZN3c1020intrusive_ptr_targetD2Ev[_ZN3c1020intrusive_ptr_targetD5Ev]+0x2ea): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::Device::validate()':
+test.cpp:(.text._ZN3c106Device8validateEv[_ZN3c106Device8validateEv]+0x88): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: test.cpp:(.text._ZN3c106Device8validateEv[_ZN3c106Device8validateEv]+0x125): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::impl::ExcludeDispatchKeyGuard::ExcludeDispatchKeyGuard(c10::DispatchKey)':
+test.cpp:(.text._ZN3c104impl23ExcludeDispatchKeyGuardC2ENS_11DispatchKeyE[_ZN3c104impl23ExcludeDispatchKeyGuardC5ENS_11DispatchKeyE]+0x46): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::ExcludeDispatchKeyGuard(c10::DispatchKeySet)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `caffe2::TypeMeta::fromScalarType(c10::ScalarType)':
+test.cpp:(.text._ZN6caffe28TypeMeta14fromScalarTypeEN3c1010ScalarTypeE[_ZN6caffe28TypeMeta14fromScalarTypeEN3c1010ScalarTypeE]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `caffe2::TypeMeta::toScalarType()':
+test.cpp:(.text._ZN6caffe28TypeMeta12toScalarTypeEv[_ZN6caffe28TypeMeta12toScalarTypeEv]+0x3a): undefined reference to `caffe2::TypeMeta::error_unsupported_typemeta(caffe2::TypeMeta)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::SymInt::SymInt(long)':
+test.cpp:(.text._ZN3c106SymIntC2El[_ZN3c106SymIntC5El]+0x45): undefined reference to `c10::SymInt::promote_to_negative()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::AutoDispatchBelowAutograd::AutoDispatchBelowAutograd()':
+test.cpp:(.text._ZN2at25AutoDispatchBelowAutogradC2Ev[_ZN2at25AutoDispatchBelowAutogradC5Ev]+0x22): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::ExcludeDispatchKeyGuard(c10::DispatchKeySet)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::UndefinedTensorImpl::singleton()':
+test.cpp:(.text._ZN3c1019UndefinedTensorImpl9singletonEv[_ZN3c1019UndefinedTensorImpl9singletonEv]+0xb): undefined reference to `c10::UndefinedTensorImpl::_singleton'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::permute(c10::ArrayRef<long>) const':
+test.cpp:(.text._ZNK2at6Tensor7permuteEN3c108ArrayRefIlEE[_ZNK2at6Tensor7permuteEN3c108ArrayRefIlEE]+0x42): undefined reference to `at::_ops::permute::call(at::Tensor const&, c10::ArrayRef<long>)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::select(long, long) const':
+test.cpp:(.text._ZNK2at6Tensor6selectEll[_ZNK2at6Tensor6selectEll]+0x53): undefined reference to `at::_ops::select_int::call(at::Tensor const&, long, c10::SymInt)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::squeeze(long) const':
+test.cpp:(.text._ZNK2at6Tensor7squeezeEl[_ZNK2at6Tensor7squeezeEl]+0x3a): undefined reference to `at::_ops::squeeze_dim::call(at::Tensor const&, long)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::Tensor::clone(c10::optional<c10::MemoryFormat>) const':
+test.cpp:(.text._ZNK2at6Tensor5cloneEN3c108optionalINS1_12MemoryFormatEEE[_ZNK2at6Tensor5cloneEN3c108optionalINS1_12MemoryFormatEEE]+0x3a): undefined reference to `at::_ops::clone::call(at::Tensor const&, c10::optional<c10::MemoryFormat>)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::isIntrusivePtr() const':
+test.cpp:(.text._ZNK3c106IValue14isIntrusivePtrEv[_ZNK3c106IValue14isIntrusivePtrEv]+0x19b): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::getTypePtr_<c10::IValue>::call()':
+test.cpp:(.text._ZN3c106detail11getTypePtr_INS_6IValueEE4callEv[_ZN3c106detail11getTypePtr_INS_6IValueEE4callEv]+0x9): undefined reference to `c10::AnyType::get()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::getTypePtr_<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::call()':
+test.cpp:(.text._ZN3c106detail11getTypePtr_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4callEv[_ZN3c106detail11getTypePtr_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4callEv]+0x9): undefined reference to `c10::StringType::get()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toComplexDouble() const':
+test.cpp:(.text._ZNK3c106IValue15toComplexDoubleEv[_ZNK3c106IValue15toComplexDoubleEv]+0xa1): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toTensor() &&':
+test.cpp:(.text._ZNO3c106IValue8toTensorEv[_ZNO3c106IValue8toTensorEv]+0x38): undefined reference to `c10::IValue::reportToTensorTypeError() const'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toTensor() const &':
+test.cpp:(.text._ZNKR3c106IValue8toTensorEv[_ZNKR3c106IValue8toTensorEv]+0x34): undefined reference to `c10::IValue::reportToTensorTypeError() const'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toSymInt() const &':
+test.cpp:(.text._ZNKR3c106IValue8toSymIntEv[_ZNKR3c106IValue8toSymIntEv]+0xc8): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: test.cpp:(.text._ZNKR3c106IValue8toSymIntEv[_ZNKR3c106IValue8toSymIntEv]+0xfe): undefined reference to `c10::SymInt::SymInt(c10::intrusive_ptr<c10::SymNodeImpl, c10::detail::intrusive_target_default_null_type<c10::SymNodeImpl> >)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::IValue::toTuple() &&':
+test.cpp:(.text._ZNO3c106IValue7toTupleEv[_ZNO3c106IValue7toTupleEv]+0x9d): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::from_blob(void*, c10::ArrayRef<long>, c10::TensorOptions const&)':
+test.cpp:(.text._ZN2at9from_blobEPvN3c108ArrayRefIlEERKNS1_13TensorOptionsE[_ZN2at9from_blobEPvN3c108ArrayRefIlEERKNS1_13TensorOptionsE]+0x93): undefined reference to `at::TensorMaker::make_tensor()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::AutoDispatchBelowAutograd::~AutoDispatchBelowAutograd()':
+test.cpp:(.text._ZN2at25AutoDispatchBelowAutogradD2Ev[_ZN2at25AutoDispatchBelowAutogradD5Ev]+0x18): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::~ExcludeDispatchKeyGuard()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::autograd::AutogradMeta::set_requires_grad(bool, c10::TensorImpl*)':
+test.cpp:(.text._ZN5torch8autograd12AutogradMeta17set_requires_gradEbPN3c1010TensorImplE[_ZN5torch8autograd12AutogradMeta17set_requires_gradEbPN3c1010TensorImplE]+0x96): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::AutogradMetaInterface::AutogradMetaInterface()':
+test.cpp:(.text._ZN3c1021AutogradMetaInterfaceC2Ev[_ZN3c1021AutogradMetaInterfaceC5Ev]+0xf): undefined reference to `vtable for c10::AutogradMetaInterface'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::autograd::AutogradMeta::AutogradMeta(c10::TensorImpl*, bool, torch::autograd::Edge)':
+test.cpp:(.text._ZN5torch8autograd12AutogradMetaC2EPN3c1010TensorImplEbNS0_4EdgeE[_ZN5torch8autograd12AutogradMetaC5EPN3c1010TensorImplEbNS0_4EdgeE]+0x2d): undefined reference to `vtable for torch::autograd::AutogradMeta'
+/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd12AutogradMetaC2EPN3c1010TensorImplEbNS0_4EdgeE[_ZN5torch8autograd12AutogradMetaC5EPN3c1010TensorImplEbNS0_4EdgeE]+0x1e9): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*)'
+/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd12AutogradMetaC2EPN3c1010TensorImplEbNS0_4EdgeE[_ZN5torch8autograd12AutogradMetaC5EPN3c1010TensorImplEbNS0_4EdgeE]+0x27e): undefined reference to `c10::AutogradMetaInterface::~AutogradMetaInterface()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::autograd::make_variable(at::Tensor, bool, bool)':
+test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x11e): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'
+/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x167): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'
+/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x27a): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'
+/usr/bin/ld: test.cpp:(.text._ZN5torch8autograd13make_variableEN2at6TensorEbb[_ZN5torch8autograd13make_variableEN2at6TensorEbb]+0x2c3): undefined reference to `c10::TensorImpl::set_autograd_meta(std::unique_ptr<c10::AutogradMetaInterface, std::default_delete<c10::AutogradMetaInterface> >)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `at::tracer::impl::NoTracerDispatchMode::~NoTracerDispatchMode()':
+test.cpp:(.text._ZN2at6tracer4impl20NoTracerDispatchModeD2Ev[_ZN2at6tracer4impl20NoTracerDispatchModeD5Ev]+0x18): undefined reference to `c10::impl::ExcludeDispatchKeyGuard::~ExcludeDispatchKeyGuard()'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::SourceRange::SourceRange(std::shared_ptr<torch::jit::Source>, unsigned long, unsigned long)':
+test.cpp:(.text._ZN5torch3jit11SourceRangeC2ESt10shared_ptrINS0_6SourceEEmm[_ZN5torch3jit11SourceRangeC5ESt10shared_ptrINS0_6SourceEEmm]+0xa9): undefined reference to `torch::jit::StringCordView::iter_for_pos(unsigned long) const'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Method::Method(torch::jit::Method const&)':
+test.cpp:(.text._ZN5torch3jit6MethodC2ERKS1_[_ZN5torch3jit6MethodC5ERKS1_]+0x2b): undefined reference to `vtable for torch::jit::Method'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Object::get_method(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const':
+test.cpp:(.text._ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x50): undefined reference to `torch::jit::Object::find_method(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
+/usr/bin/ld: test.cpp:(.text._ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZNK5torch3jit6Object10get_methodERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x111): undefined reference to `c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Module::forward(std::vector<c10::IValue, std::allocator<c10::IValue> >, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, c10::IValue, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, c10::IValue> > > const&)':
+test.cpp:(.text._ZN5torch3jit6Module7forwardESt6vectorIN3c106IValueESaIS4_EERKSt13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES4_St4hashISD_ESt8equal_toISD_ESaISt4pairIKSD_S4_EEE[_ZN5torch3jit6Module7forwardESt6vectorIN3c106IValueESaIS4_EERKSt13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES4_St4hashISD_ESt8equal_toISD_ESaISt4pairIKSD_S4_EEE]+0xc2): undefined reference to `torch::jit::Method::operator()(std::vector<c10::IValue, std::allocator<c10::IValue> >, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, c10::IValue, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, c10::IValue> > > const&) const'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Module::eval()':
+test.cpp:(.text._ZN5torch3jit6Module4evalEv[_ZN5torch3jit6Module4evalEv]+0x1d): undefined reference to `torch::jit::Module::train(bool)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `YoloPTNode::YoloPTNode()':
+test.cpp:(.text._ZN10YoloPTNodeC2Ev[_ZN10YoloPTNodeC5Ev]+0x17d): undefined reference to `torch::jit::load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, c10::optional<c10::Device>, bool)'
+/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNodeC2Ev[_ZN10YoloPTNodeC5Ev]+0x207): undefined reference to `torch::jit::Module::to(c10::Device, bool)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `YoloPTNode::postprocess(cv::Mat&, at::Tensor&)':
+test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0xa6): undefined reference to `float at::Tensor::item<float>() const'
+/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x129): undefined reference to `int at::Tensor::item<int>() const'
+/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x193): undefined reference to `float at::Tensor::item<float>() const'
+/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x201): undefined reference to `float at::Tensor::item<float>() const'
+/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x26f): undefined reference to `float at::Tensor::item<float>() const'
+/usr/bin/ld: test.cpp:(.text._ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE[_ZN10YoloPTNode11postprocessERN2cv3MatERN2at6TensorE]+0x2dd): undefined reference to `float at::Tensor::item<float>() const'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::SymNodeImpl, c10::detail::intrusive_target_default_null_type<c10::SymNodeImpl> >::reclaim(c10::SymNodeImpl*)':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_11SymNodeImplENS_6detail34intrusive_target_default_null_typeIS1_EEE7reclaimEPS1_[_ZN3c1013intrusive_ptrINS_11SymNodeImplENS_6detail34intrusive_target_default_null_typeIS1_EEE7reclaimEPS1_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `long c10::_maybe_wrap_dim<long>(long, long, bool)':
+test.cpp:(.text._ZN3c1015_maybe_wrap_dimIlEET_S1_S1_b[_ZN3c1015_maybe_wrap_dimIlEET_S1_S1_b]+0xab): undefined reference to `long c10::detail::maybe_wrap_dim_slow<long>(long, long, bool)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::intrusive_ptr_target, c10::UndefinedTensorImpl>::reclaim(c10::intrusive_ptr_target*)':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_20intrusive_ptr_targetENS_19UndefinedTensorImplEE7reclaimEPS1_[_ZN3c1013intrusive_ptrINS_20intrusive_ptr_targetENS_19UndefinedTensorImplEE7reclaimEPS1_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::detail::getMaybeFakeTypePtr_<c10::List<c10::IValue>, false>::call()':
+test.cpp:(.text._ZN3c106detail20getMaybeFakeTypePtr_INS_4ListINS_6IValueEEELb0EE4callEv[_ZN3c106detail20getMaybeFakeTypePtr_INS_4ListINS_6IValueEEELb0EE4callEv]+0xef): undefined reference to `c10::ListType::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, c10::Type::SingletonOrSharedTypePtr<c10::Type>)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::TensorImpl, c10::UndefinedTensorImpl>::retain_()':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_10TensorImplENS_19UndefinedTensorImplEE7retain_Ev[_ZN3c1013intrusive_ptrINS_10TensorImplENS_19UndefinedTensorImplEE7retain_Ev]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::ivalue::ComplexHolder, c10::detail::intrusive_target_default_null_type<c10::ivalue::ComplexHolder> >::reclaim(c10::ivalue::ComplexHolder*)':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_6ivalue13ComplexHolderENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_[_ZN3c1013intrusive_ptrINS_6ivalue13ComplexHolderENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::ivalue::Tuple, c10::detail::intrusive_target_default_null_type<c10::ivalue::Tuple> >::reclaim(c10::ivalue::Tuple*)':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_6ivalue5TupleENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_[_ZN3c1013intrusive_ptrINS_6ivalue5TupleENS_6detail34intrusive_target_default_null_typeIS2_EEE7reclaimEPS2_]+0xfd): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::ivalue::Object, c10::detail::intrusive_target_default_null_type<c10::ivalue::Object> >::retain_()':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_6ivalue6ObjectENS_6detail34intrusive_target_default_null_typeIS2_EEE7retain_Ev[_ZN3c1013intrusive_ptrINS_6ivalue6ObjectENS_6detail34intrusive_target_default_null_typeIS2_EEE7retain_Ev]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::intrusive_ptr<c10::detail::DictImpl, c10::detail::intrusive_target_default_null_type<c10::detail::DictImpl> >::retain_()':
+test.cpp:(.text._ZN3c1013intrusive_ptrINS_6detail8DictImplENS1_34intrusive_target_default_null_typeIS2_EEE7retain_Ev[_ZN3c1013intrusive_ptrINS_6detail8DictImplENS1_34intrusive_target_default_null_typeIS2_EEE7retain_Ev]+0x84): undefined reference to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o:test.cpp:(.text._ZN3c1013intrusive_ptrINS_15VariableVersion14VersionCounterENS_6detail34intrusive_target_default_null_typeIS2_EEEC2EPS2_[_ZN3c1013intrusive_ptrINS_15VariableVersion14VersionCounterENS_6detail34intrusive_target_default_null_typeIS2_EEEC5EPS2_]+0xd3): more undefined references to `c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*)' follow
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `c10::SmallVectorTemplateCommon<long, void>::grow_pod(unsigned long, unsigned long)':
+test.cpp:(.text._ZN3c1025SmallVectorTemplateCommonIlvE8grow_podEmm[_ZN3c1025SmallVectorTemplateCommonIlvE8grow_podEmm]+0x3e): undefined reference to `c10::SmallVectorBase<unsigned int>::grow_pod(void*, unsigned long, unsigned long)'
+/usr/bin/ld: CMakeFiles/CroppingNode.dir/src/test.cpp.o: in function `torch::jit::Method::~Method()':
+test.cpp:(.text._ZN5torch3jit6MethodD2Ev[_ZN5torch3jit6MethodD5Ev]+0x13): undefined reference to `vtable for torch::jit::Method'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/CroppingNode.dir/build.make:206: CroppingNode] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/CroppingNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,28 @@
+[0.012s] Invoking command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
+[0.033s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.119s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.137s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.138s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.141s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.154s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.173s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.174s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.256s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.284s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.315s] -- Found pose_msg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/pose_msg/share/pose_msg/cmake)
+[0.322s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.333s] -- Found referee_pkg: 0.0.0 (/home/jiangping/Vision_Arena_2025/install/referee_pkg/share/referee_pkg/cmake)
+[0.382s] -- Found Torch: /home/jiangping/libtorch/lib/libtorch.so  
+[0.428s] -- Configuring done
+[0.439s] -- Generating done
+[0.444s] -- Build files have been written to: /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg
+[0.481s] [ 50%] [32mBuilding CXX object CMakeFiles/CroppingNode.dir/src/test.cpp.o[0m
+[0.747s] [01m[K/home/jiangping/Vision_Arena_2025/src/player_pkg/src/test.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktorch/script.h: No such file or directory
+[0.747s]     6 | #include [01;31m[K<torch/script.h>[m[K
+[0.747s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.747s] compilation terminated.
+[0.751s] gmake[2]: *** [CMakeFiles/CroppingNode.dir/build.make:76: CMakeFiles/CroppingNode.dir/src/test.cpp.o] Error 1
+[0.752s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/CroppingNode.dir/all] Error 2
+[0.752s] gmake: *** [Makefile:146: all] Error 2
+[0.756s] Invoked command in '/home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/jiangping/Vision_Arena_2025/src/player_pkg/build/player_pkg -- -j8 -l8
