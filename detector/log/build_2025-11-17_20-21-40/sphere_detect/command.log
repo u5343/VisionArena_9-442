@@ -1,2 +1,0 @@
-Invoking command in '/home/jiangping/VisionArena/detector/build/sphere_detect': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/VisionArena/detector -DCMAKE_INSTALL_PREFIX=/home/jiangping/VisionArena/detector/install/sphere_detect
-Invoked command in '/home/jiangping/VisionArena/detector/build/sphere_detect' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiangping/VisionArena/detector -DCMAKE_INSTALL_PREFIX=/home/jiangping/VisionArena/detector/install/sphere_detect
